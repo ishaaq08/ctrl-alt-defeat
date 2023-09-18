@@ -3,26 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="/script.js"></script>
-    <title>Document</title>    
+    <script defer src="/script.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles_home_quiz.css">
+    <title>Quiz_html</title>    
 </head>
 <body>
-    <div class="question">
-        <p></p>
-    </div>
-    <div class="answer">
-        <p></p>
-    </div>
-    <div class="another_answer">
-        <p></p>
-    </div>
-    <div class="another_answer2">
-        <p></p>
-    </div>
-    <div class="another_answer3">
-        <p></p>
-    </div>
-    
-    
+    <!-- navbar -->
+    <section id="navbar-section">
+        <nav class="navbar navbar static-top navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">Control-Alt-Defeat</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto w-100 justify-content-end">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Info
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Contact Us</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+    <section id="questions_section">
+        <div class="question">
+            <p></p>
+        </div>
+        <div class="answer">
+            <p></p>
+        </div>
+        <div class="another_answer">
+            <p></p>
+        </div>
+        <div class="another_answer2">
+            <p></p>
+        </div>
+        <div class="another_answer3">
+            <p></p>
+        </div>
+    </section>  
+     <section id="footer">
+         <!-- footer -->
+    <div class="container">
+        <footer class="bg-light text-center">
+        <div class="container p-2">
+          <section class="footer signupsection">
+            <form action="">
+              <div class="row d-flex justify-content-center">
+                <div class="col-auto">
+                  <p class="pt-2">
+                    <strong>Sign up for our daily braintests!</strong>
+                  </p>
+                </div>
+                <div class="col-md-5 col-12">
+                  <div class="form-outline mb-1">
+                    <input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">Email address</label>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-1">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020
+          <a class="text-dark" href="#">Control-Alt-Defeat</a>
+        </div>
+       
+      </footer>
+     </section>
 </body>
 </html>
