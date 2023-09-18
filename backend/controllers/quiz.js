@@ -19,7 +19,7 @@ const getEachQuestion = (req, res) => {
 
 const getRandomQuestion = (req, res) => {
   const randIdx = Math.floor(Math.random() * Object.keys(quiz).length);
-  res.json(quotes[randIdx]);
+  res.json(quiz[randIdx]);
 }
 
 module.exports = {
