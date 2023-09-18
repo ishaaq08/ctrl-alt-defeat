@@ -8,7 +8,7 @@ const {
 } = require('../controllers/quiz');
 
 router.route('/').get(getAllQuestions)
-router.route('/:id').get(getEachQuestion);
 router.route('/random').get(getRandomQuestion);
+router.route('/:id').get(getEachQuestion);
 
 module.exports = router;
