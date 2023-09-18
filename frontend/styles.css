@@ -1,0 +1,24 @@
+body {
+    height: 100%;
+    background-image: url("assets/background.jpg");
+}
+
+.jumbotron{
+    background-color: white;
+}
+.btn {
+    font-size: 24px; /* Increase the font size */
+    padding: 20px 40px;
+    width: 200px;
+    height: 90px;
+}
+.btn:hover{
+    background-color: rgb(69, 74, 135);
+    transition-duration: 0.4s;
+}
+
+.bg-image{
+    background-image: url("assets/background.jpg");
+    background-size: cover; 
+} 
+
