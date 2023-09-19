@@ -9,3 +9,8 @@
     background-color: #fc0000; /* Change to your desired matched card color */
   }
   
+  .pair-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
