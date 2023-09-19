@@ -1,0 +1,21 @@
+body {
+    /* This is for the navbar to not overlap sections */
+    padding-top: 15px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+.eachsubject{
+    height: 40vh;
+    padding: 50px;
+    margin: 20px;
+    color: black;
+}
+.content{
+    height: 20vh;
+    display: flex;
+    background-color: purple;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+
