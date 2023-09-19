@@ -14,7 +14,6 @@ let gamePlay = true;
 
 //score that counts current player's score and total questions asked 
 let score = 0;
-let total= 0;
 
 if(localStorage.getItem('score') != null){
     score = localStorage.getItem('score')
@@ -36,7 +35,6 @@ function checkRight(e){
   console.log(clicked_answer)
   if (correct_element == clicked_answer){
     score++;
-    total++;
     localStorage.setItem('score', score)
     scoreField.textContent = localStorage.getItem('score')
     clicked_answer.parentElement.style.background = "green";
@@ -44,7 +42,6 @@ function checkRight(e){
         location.reload()
     }, 3000)
   }else{
-    total++;
     clicked_answer.parentElement.style.color = "red";
     setTimeout(function(){
         location.reload()
@@ -88,11 +85,10 @@ function exitGame(){
     endSection.textContent = "Thank you for playing!"
     scoreField1.textContent = "Correct Answers: "
     //get percentage doesn't work yet
-    let calcPercentage = ((localStorage.getItem('score'))/total)*100
-    console.log(calcPercentage)
+    //let calcPercentage = ((localStorage.getItem('score'))/total)*100
+    console.log(total)
     score_reset = 0
-    localStorage.setItem('score', score_reset)
-    
+    localStorage.setItem('score', score_reset) 
 }
 getRandomQuestion()
 
