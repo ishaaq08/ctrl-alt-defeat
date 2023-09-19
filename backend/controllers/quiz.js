@@ -22,9 +22,18 @@ const getRandomQuestion = (req, res) => {
   res.json(quiz[randIdx]);
 }
 
+const randomiseAll = (req, res) => {  
+  
+  const random = quiz.sort(() => Math.random() - 0.5);
+  res.status(200).json(random);
+
+}
+
+
 module.exports = {
   getAllQuestions,
   getEachQuestion,
-  getRandomQuestion
+  getRandomQuestion,
+  randomiseAll
 }
 
