@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('p');
+const cards = document.querySelectorAll('.pair-container');
 
 let selectedCards = [];
 let matchedCards = [];
@@ -10,7 +10,7 @@ function shuffleArray(array) {
   }
 }
 async function getApiData() {
-  const res = await fetch(`http://localhost:3000/quiz`);
+  const res = await fetch(`http://localhost:3000/quiz/random/all`);
   const data = await res.json();
   const filteredApiData = data.slice(0, 6);
 
@@ -18,7 +18,7 @@ async function getApiData() {
     return [item.question, item.correct_answer];
   });
 
-  shuffleArray(cardsData);
+  // shuffleArray(cardsData);
   cards.forEach((card, index) => {
     card.textContent = cardsData[index];
   });
@@ -38,8 +38,8 @@ cards.forEach((card) => {
 
         if ((class1 === class2) && (firstCard.innerHTML !== secondCard.innerHTML)) {
           matchedCards.push(firstCard, secondCard);
-          selectedCards[0].parentElement.style.backgroundColor = 'green';
-          selectedCards[1].parentElement.style.backgroundColor = 'green';
+          selectedCards[0].style.backgroundColor = 'green';
+          selectedCards[1].style.backgroundColor = 'green';
           selectedCards = [];
 
           console.log('Correct pair chosen');

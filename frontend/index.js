@@ -13,3 +13,4 @@ function revealContent(){
 }
 
 revealBtn.addEventListener("click", revealContent);
+
