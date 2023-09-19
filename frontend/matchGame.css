@@ -1,0 +1,11 @@
+/* Add this to your CSS stylesheet */
+.selected {
+    background-color: #ffcc00; /* Change to your desired selected card color */
+  }
+  .matched {
+    background-color: #00cc00; /* Change to your desired matched card color */
+  }
+  .not-matched {
+    background-color: #fc0000; /* Change to your desired matched card color */
+  }
+  
