@@ -1,9 +1,28 @@
 const question = document.querySelector(".question p")
-const answer1 = document.querySelector(".answer p")
-const answer2 = document.querySelector(".another_answer p")
-const answer3 = document.querySelector(".another_answer2 p")
-const answer4 = document.querySelector(".another_answer3 p")
+const answer1 = document.querySelector(".answer1 p")
+const answer2 = document.querySelector(".answer2 p")
+const answer3 = document.querySelector(".answer3 p")
+const answer4 = document.querySelector(".answer4 p")
+const answers_cont = document.querySelector(".answers")
 
+//score that counts current player's score
+let score = 0;
+let total_score = 0;
+let correct_element = "";
+//need to add event listener get container, and use it as a wrapper
+answers_cont.addEventListener("click", checkRight);
+
+function checkRight(e){
+  clicked_answer =  e.target.querySelector("p");
+  if (correct_element == clicked_answer){
+    score++;
+    console.log(`Right answer, You have achieved: ${score} points`)
+  }else{
+    console.log(`Wrong answer, You have achieved: ${score} points so far`)
+  }
+}
+
+//random index functions to shuffle answers later
 function getIndexForAnswers(){
     // this function should add
     allInd = [0,1,2,3]
@@ -29,7 +48,10 @@ async function getRandomQuestion(){
     answers[indX[0]].textContent = correctAnswer;
     answers[indX[1]].textContent = wrongAnswersArray[0];
     answers[indX[2]].textContent = wrongAnswersArray[1];
-    answers[indX[3]].textContent = wrongAnswersArray[2];   
+    answers[indX[3]].textContent = wrongAnswersArray[2];
+    correct_element = answers[indX[0]]
+    console.log(correct_element)
     }
 
 getRandomQuestion()
+
