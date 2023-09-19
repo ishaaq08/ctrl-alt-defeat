@@ -4,24 +4,44 @@ const answer2 = document.querySelector(".answer2 p")
 const answer3 = document.querySelector(".answer3 p")
 const answer4 = document.querySelector(".answer4 p")
 const answers_cont = document.querySelector(".answers")
+const answer_buttons = document.querySelectorAll(".answers .btn")
+const scoreField = document.querySelector(".score-field")
 
 //score that counts current player's score
 let score = 0;
-let total_score = 0;
-let correct_element = "";
-//need to add event listener get container, and use it as a wrapper
-answers_cont.addEventListener("click", checkRight);
-
-function checkRight(e){
-  clicked_answer =  e.target.querySelector("p");
-  if (correct_element == clicked_answer){
-    score++;
-    console.log(`Right answer, You have achieved: ${score} points`)
-  }else{
-    console.log(`Wrong answer, You have achieved: ${score} points so far`)
-  }
+if(localStorage.getItem('score') != null){
+    score = localStorage.getItem('score')
+    scoreField.textContent =localStorage.getItem('score')
 }
 
+
+answer_buttons.forEach(item =>{
+    item.addEventListener('click', e=>{
+        console.log("we are listening")
+        checkRight(e)
+    })
+})
+
+function checkRight(e){
+  let clicked_answer = e.target.querySelector("p")
+  console.log("we arrived here")
+  console.log(clicked_answer)
+  if (correct_element == clicked_answer){
+    score++;
+    localStorage.setItem('score', score)
+    scoreField.textContent = localStorage.getItem('score')
+    clicked_answer.parentElement.style.background = "green";
+    setTimeout(function(){
+        location.reload()
+    }, 4000)
+  }else{
+    console.log(clicked_answer)
+    clicked_answer.parentElement.style.color = "red";
+    setTimeout(function(){
+        location.reload()
+    }, 4000)
+  }
+}
 //random index functions to shuffle answers later
 function getIndexForAnswers(){
     // this function should add
@@ -30,10 +50,14 @@ function getIndexForAnswers(){
     return indX
 }
 
+// event listener passes on number of questions
+// item.addEventlistener("click", functionname) 
+
 async function getRandomQuestion(){
     const options = {
         method: "GET"
     }
+    //for 10 times 
     const response = await fetch("http://localhost:3000/quiz/random", options);
     const data = await response.json();
     console.log(data)
