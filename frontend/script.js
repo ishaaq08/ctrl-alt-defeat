@@ -1,8 +1,8 @@
 const question = document.querySelector(".question p")
-const answer1 = document.querySelector(".answer1 p")
-const answer2 = document.querySelector(".answer2 p")
-const answer3 = document.querySelector(".answer3 p")
-const answer4 = document.querySelector(".answer4 p")
+const answer1 = document.querySelector(".answer1 .answer1")
+const answer2 = document.querySelector(".answer2 .answer2")
+const answer3 = document.querySelector(".answer3 .answer3")
+const answer4 = document.querySelector(".answer4 .answer4")
 const answers_cont = document.querySelector(".answers")
 const answer_buttons = document.querySelectorAll(".answers .btn")
 const scoreField = document.querySelector(".score-field")
@@ -15,35 +15,40 @@ let gamePlay = true;
 
 //score that counts current player's score and total questions asked 
 let score = 0;
+let round = 0;
+
 //store our score in LocalStorage
 if(localStorage.getItem('score') != null){
     score = localStorage.getItem('score')
     scoreField.textContent =localStorage.getItem('score')
 }
-//click on the answers
+//click on the answers -- works on the div only 
 answer_buttons.forEach(item =>{
     item.addEventListener('click', e=>{
         console.log("we are listening")
         checkRight(e)
     })
 })
+
+
 //click on the exit button 
 exitButton.addEventListener('click', exitGame)
 
 function checkRight(e){
-  let clicked_answer = e.target.querySelector("p")
-  console.log("we arrived here")
+  let clicked_answer = e.target.innerText
+  let clicked_element = e.target
   console.log(clicked_answer)
+  console.log(correct_element)
   if (correct_element == clicked_answer){
     score++;
     localStorage.setItem('score', score)
     scoreField.textContent = localStorage.getItem('score')
-    clicked_answer.parentElement.style.background = "green";
+    clicked_element.parentElement.style.background = "green";
     setTimeout(function(){
         location.reload()
     }, 3000)
   }else{
-    clicked_answer.parentElement.style.color = "red";
+    clicked_element.style.color = "red";
     setTimeout(function(){
         location.reload()
     }, 3000)
@@ -60,14 +65,13 @@ async function getRandomQuestion(){
     const options = {
         method: "GET"
     }
-    //loop through 10 times
     const response = await fetch("http://localhost:3000/quiz/random", options);
-    const data = await response.json();
-    console.log(data)
-    console.log(data.question)
-    question.textContent = data.question;
-
+    const data = await response.json()
+    displayQuestion(data)
+}
+function displayQuestion(data){
     // Assign a HTML element randomly to each answer
+    question.textContent = data.question;
     const correctAnswer = data.correct_answer;
     const wrongAnswersArray = data.incorrect_answers;
     let indX = getIndexForAnswers(); //shuffled indexes
@@ -76,9 +80,9 @@ async function getRandomQuestion(){
     answers[indX[1]].textContent = wrongAnswersArray[0];
     answers[indX[2]].textContent = wrongAnswersArray[1];
     answers[indX[3]].textContent = wrongAnswersArray[2];
-    correct_element = answers[indX[0]]
-    }
-
+    correct_element = answers[indX[0]].innerText
+    console.log(correct_element)
+}
 function exitGame(){
     console.log("we reached the exitGame function")
     questionsSection.style.display = 'none';
@@ -91,5 +95,12 @@ function exitGame(){
     score_reset = 0
     localStorage.setItem('score', score_reset) 
 }
+function getThreeQuestion(){
+    getRandomQuestion()
+    //exitGame()
+}
 getRandomQuestion()
 
+// for (i=0; i<3;i++){
+//     getThreeQuestion()
+// }
