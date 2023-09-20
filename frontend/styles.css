@@ -117,12 +117,47 @@ body {
     font-size: large;
 }
 
-#slide-show-image{
-    width: 100px;
+
+
+
+/* Static Div Boxes */
+
+.our-journey-content{
+    padding: 15px;
+    border: black solid 5px;
+    border-radius: 5px;
+
+    background-image: linear-gradient(rgb(155, 160, 79), rgb(196, 213, 219))
 }
 
-.slide-show-border{
-    border: 5px white solid;
+.testimonies-content{
+    padding: 15px;
+    border: black solid 5px;
+    border-radius: 5px;
+
+    background-image: linear-gradient(rgb(81, 160, 67), rgb(196, 213, 219))
+}
+
+#slide-show-image{
+    width: 150px;
+}
+
+/* .slide-show-border{
+    border: 5px white solid; 
     border-radius: 5px;
     padding: 15px;
+} */
+
+/* Hover Actions */
+
+.our-journey-content:hover{
 }
+
+/* .slide-show-border:hover{
+    border: 5px black solid;
+    border-radius: 5px;
+    padding: 15px;
+
+    transition-duration: 0.2s;
+    background-image: linear-gradient(rgb(110, 216, 91), rgb(196, 213, 219))
+} */
