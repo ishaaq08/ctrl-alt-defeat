@@ -7,17 +7,6 @@ body {
     background-color: white;
 }
 
-.btn {
-    font-size: 24px; /* Increase the font size */
-    padding: 20px 40px;
-    width: 200px;
-    height: 90px;
-
-    background-color: #6B7A8F; 
-
-    background-image: linear-gradient(rgb(74, 114, 246), rgb(62, 148, 183))
-}  
-
 .quiz-button{
     background-image: linear-gradient(rgb(74, 114, 246), rgb(62, 148, 183));
 } 
@@ -41,13 +30,6 @@ body {
     color: white;
 }
 
-.btn:hover{
-    /* background-color: rgb(69, 74, 135); */
-
-    background-image: linear-gradient(rgb(209, 216, 105), rgb(196, 213, 219));
-    transition-duration: 0.4s;
-    border: black solid 5px;
-}
 
 
 .bg-image{
@@ -118,8 +100,6 @@ body {
 }
 
 
-
-
 /* Static Div Boxes */
 
 .our-journey-content{
@@ -168,12 +148,20 @@ body {
 
     margin: 5px;
 
+    background-image: linear-gradient(rgb(210, 217, 104), rgb(196, 213, 219));
+
+    border: black solid 5px;
+    border-radius: 5px;
+
+    
 
 
 }
 
 .new-quiz-button:hover{
    transform: scale(1.1);
- 
-    
+
+   background-image: linear-gradient(rgb(214, 166, 34), rgb(196, 213, 219));
+
+   border: black solid 7px;
 }
