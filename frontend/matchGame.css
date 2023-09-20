@@ -1,0 +1,68 @@
+/* Add this to your CSS stylesheet */
+
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    grid-template-areas: 
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
+    "card9 card10 card11 card12";
+
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+  }
+
+  .container > div {
+    border: 1px solid #00000023;
+    border-radius: 1rem;
+  }
+
+  .container div:nth-child(1) {
+    grid-area: card3;
+  }
+
+  .container div:nth-child(2) {
+    grid-area: card2;
+  }
+  .container div:nth-child(3) {
+    grid-area: card1;
+  }
+  .container div:nth-child(4) {
+    grid-area: card5;
+  }
+  .container div:nth-child(5) {
+    grid-area: card10;
+  }
+  .container div:nth-child(6) {
+    grid-area: card4;
+  }
+  .container div:nth-child(7) {
+    grid-area: card11;
+  }
+  .container div:nth-child(8) {
+    grid-area: card12;
+  }
+  .container div:nth-child(9){
+    grid-area:card9;
+  }
+  .container div:nth-child(10){
+    grid-area:card7;
+  }
+  .container div:nth-child(11){
+    grid-area: card6;
+  }
+  .container div:nth-child(12){
+    grid-area: card8;
+  }
+
+
+  .pair-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 2rem;
+  }

@@ -3,26 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="/script.js"></script>
-    <title>Document</title>    
+    <script defer src="script.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles_home_quiz.css">
+    <title>Quiz_html</title>    
 </head>
 <body>
-    <div class="question">
-        <p></p>
-    </div>
-    <div class="answer">
-        <p></p>
-    </div>
-    <div class="another_answer">
-        <p></p>
-    </div>
-    <div class="another_answer2">
-        <p></p>
-    </div>
-    <div class="another_answer3">
-        <p></p>
-    </div>
-    
-    
+    <!-- navbar -->
+    <section id="navbar-section">
+    </section>
+
+    <section id="questions_section">
+        <div class="container-fluid question">
+            <div class="col h-50 md-7 mt-4 mb-2 p-3 justify-content-center text-center">
+                <div class="h1 question">
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid answers">
+            <div class="col-md-3 my-2 p-3 text-center answers">
+                <div class="h3 answer1 w-100">
+                    <button type="button" class="btn btn-block btn-outline-dark btn-lg rounded answer1"><p></p></button>
+                </div>
+                <div class="h3 answer2 w-100">
+                    <button type="button" class="btn btn-block shadow btn-outline-dark btn-lg rounded answer2"><p></p></button>
+                </div>
+                <div class="h3 answer3 w-100">
+                    <button type="button" class="btn btn-block shadow btn-outline-dark btn-lg rounded answer3"><p></p></button>
+                </div>
+                <div class="h3 answer4 w-100">
+                    <button type="button" class="btn btn-block shadow btn-outline-dark btn-lg rounded answer4"><p></p></button>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="end_section">
+      <div class="container-fluid">
+        <div class="col md-1 h-10 mx-2 my-4 text-center">
+            <button type="button" class="btn shadow-sm btn-info rounded submitAnswer">End Game and See Score</button>
+        </div>
+      </div>
+    </section>
+    <!-- Score  -->
+    <section>
+      <div class="container-fluid">
+        <div class="row justify-content-center center text-center">
+        <div class="col-md-3 w-50 m-4 bg-light ">
+          <div class="h2 score-field1">
+            <p>Current Score</p>
+            </div>
+        </div>
+        <div class="col-md-2 w-50 m-4 bg-light ">
+          <div class="h2 score-field">
+            <p></p>
+            </div>
+        </div>
+      </div>
+    </section>
+         <!-- footer --> 
+     <section id="footer">
+        <div id="container_footer" class="container_footer">
+     </section>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+     <script>
+      $(function(){
+      $("#navbar-section").load("nav.html");
+    });
+    </script>
+    <script>
+      $(function(){
+      $("#container_footer").load("footer.html");
+    });
+  </script>
 </body>
 </html>

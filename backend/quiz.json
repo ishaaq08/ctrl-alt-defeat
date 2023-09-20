@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "category": "History",
     "type": "multiple",
     "difficulty": "easy",
@@ -12,6 +13,7 @@
     ]
   },
   {
+    "id": 2,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -24,6 +26,7 @@
     ]
   },
   {
+    "id": 3,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
