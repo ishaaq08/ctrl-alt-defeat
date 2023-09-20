@@ -46,18 +46,26 @@ cards.forEach((card) => {
           console.log(matchedCards)
 
           if (matchedCards.length === cards.length) {
-            console.log('Congratulations you won!');
+            alert('Congratulations you won!');
           } else{
             selectedCards = [];
           }
-        }else {
-          selectedCards = [];
+        }else {   
           console.log('Incorrect pair chosen');
-        } 
+          selectedCards[0].classList.add('changeBackground');
+          selectedCards[1].classList.add('changeBackground');
+          setTimeout(() => {
+            console.log(selectedCards);
+            selectedCards[0].classList.remove('changeBackground');
+            selectedCards[1].classList.remove('changeBackground');
+            selectedCards = [];
+          }, 1000);
+          
         }
       }
-    })
+    }
   })
+})
 
 
 getApiData();

@@ -20,6 +20,22 @@
     border-radius: 1rem;
   }
 
+  .container > div:hover {
+    background-color: rgb(149, 147, 146);
+    color: #fff;
+    transition: all 0.2s ease-in;
+  }
+
+  .changeBackground {
+    background-color: red;
+    color: #fff;
+  }
+  
+  /* .container > div:active {
+    background-color: rgba(34, 33, 33, 0);
+    color: #000;
+  } */
+
   .container div:nth-child(1) {
     grid-area: card3;
   }
@@ -58,11 +74,16 @@
     grid-area: card8;
   }
 
+h1{
+    text-align: center;
+    margin-block: 1rem;
+  }
 
   .pair-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
+    width: 300px;
     padding: 2rem;
   }
