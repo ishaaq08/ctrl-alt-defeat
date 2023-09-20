@@ -13,7 +13,6 @@ body {
 .content{
     height: 20vh;
     display: flex;
-    background-color: purple;
     justify-content: center;
     align-items: center;
     font-size: 3vw;

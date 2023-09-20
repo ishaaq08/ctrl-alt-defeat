@@ -10,11 +10,12 @@ const scoreField1 = document.querySelector(".score-field1")
 const exitButton = document.querySelector(".submitAnswer")
 const questionsSection = document.getElementById("questions_section")
 const endSection = document.getElementById("end_section")
+const subject3 = document.querySelector("#historyButton")
 let gamePlay = true;
 
 //score that counts current player's score and total questions asked 
 let score = 0;
-
+//store our score in LocalStorage
 if(localStorage.getItem('score') != null){
     score = localStorage.getItem('score')
     scoreField.textContent =localStorage.getItem('score')
