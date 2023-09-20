@@ -6,13 +6,16 @@
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js" defer></script>
         <title>Select a Game</title>
     </head>
 
 <body class="bg-image">
 
+  <!-- Navigation Bar -->
+
     <section id="navbar-section">
-        <nav class="navbar navbar navbar-expand-md navbar-light bg-light">
+        <!-- <nav class="navbar navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="#">Control-Alt-Defeat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -38,71 +41,73 @@
                 </li>
               </ul>
             </div>
-          </nav>
+          </nav> -->
     </section>
 
     
+<!-- Jumbotron -->
 
     <div class="jumbotron text-center">
         <h1>Select a Game</h1>
     </div>
 
-    <div class="container">
+    <!-- 2 Quiz Buttons -->
+
+    <div class="container quizBtnParent">
         <div class="row py-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center my-auto ">
-                <a href="quiz.html" class="btn btn-secondary btn-lg btn-block">Quiz</a>
+            <div class="col-md-6 text-end my-auto">
+                <a href="#" class="btn quiz-button-10 game btn-secondary btn-lg btn-block text-center">Quiz 10Qs</a>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-6 text-start my-auto">
+              <a href="#" class="btn quiz-button-50 game btn-secondary btn-sm btn-block">Quiz 50Qs</a>
+          </div>
         </div>
-    </div>
+      </div>
+
+    <!-- Game 1 -->
 
     <div class="container">
-        <div class="row py-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center my-auto ">
-                <a href="#" class="btn btn-secondary btn-lg btn-block">Game 1</a>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
+      <div class="row py-5">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 text-center my-auto ">
+              <a href="#" class="btn game btn-secondary btn-lg btn-block">Game 1</a>
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+  </div> 
 
-    <div class="container">
-        <div class="row py-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center my-auto ">
-                <a href="#" class="btn btn-secondary btn-lg btn-block">Game 2</a>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
+  <!-- Game 2 -->
 
-    <div class="container-fluid">
-        <footer class="bg-light text-center">
-        <div class="container p-2">
-          <section class="footer signupsection">
-            <form action="">
-              <div class="row d-flex justify-content-center">
-                <div class="col-auto">
-                  <p class="pt-2">
-                    <strong>Sign up for our daily braintests!</strong>
-                  </p>
-                </div>
-                <div class="col-md-5 col-12">
-                  <div class="form-outline mb-1">
-                    <input type="email" id="form5Example2" class="form-control" />
-                    <label class="form-label" for="form5Example2">Email address</label>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-1">
-                    Subscribe
-                  </button>
-                </div>
-              </div>
-            </form>
-          </section>
-        </div>
+  <div class="container">
+      <div class="row py-5">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 text-center my-auto ">
+              <a href="#" class="btn game btn-secondary btn-lg btn-block">Game 2</a>
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+  </div>
+
+
+
+    <!-- Footer -->
+
+<div id="container_footer" class="container_footer">
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+<script>
+$(function(){
+$("#navbar-section").load("nav.html");
+});
+</script>
+<script>
+$(function(){
+$("#container_footer").load("footer.html");
+});
+</script>
 
 </body>
 

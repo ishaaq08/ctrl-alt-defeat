@@ -6,19 +6,113 @@ body {
 .jumbotron{
     background-color: white;
 }
+
 .btn {
     font-size: 24px; /* Increase the font size */
     padding: 20px 40px;
     width: 200px;
     height: 90px;
+
+    background-color: #6B7A8F; 
+
+    background-image: linear-gradient(rgb(74, 114, 246), rgb(62, 148, 183))
+}  
+
+.quiz-button{
+    background-image: linear-gradient(rgb(74, 114, 246), rgb(62, 148, 183));
+} 
+
+.num-of-qs-btn{
+    width: 100px;
+    height: 75px;
+    border-radius: 10px;
+    border: black solid 5px;
 }
-.btn:hover{
-    background-color: rgb(69, 74, 135);
+
+.num-of-qs-btn:hover{
+    background-color:#ececab ;
+    transform: scale(1.2);
     transition-duration: 0.4s;
 }
+
+
+#num-of-qs{
+    font-size: large;
+    color: white;
+}
+
+.btn:hover{
+    /* background-color: rgb(69, 74, 135); */
+
+    background-image: linear-gradient(rgb(209, 216, 105), rgb(196, 213, 219));
+    transition-duration: 0.4s;
+    border: black solid 5px;
+}
+
 
 .bg-image{
     background-image: url("assets/background.jpg");
     background-size: cover; 
 } 
 
+.btn.game:hover{
+    transform: scale(1.2);
+}
+
+/* About Us Page */
+
+.about-us-headers{
+    color: white;
+    text-decoration: underline;
+}
+
+#slide-show{
+    color:white;
+}
+
+.rating{
+    width: 100%;
+}
+
+.education{
+    width: 50%;
+}
+
+.hidden{
+    display: none;
+}
+
+#text{
+    color: white;
+}
+
+.testimony{
+    background-color: #6B7A8F;
+    border: #6B7A8F;
+    border-radius: 5px;
+
+    width: 100%;
+    height: 50%;
+
+    color:white;
+    font-size: 25px;
+}
+
+.testimony:hover{
+    background-color: rgb(69, 74, 135);
+    transition-duration: 0.4s;
+    border: black solid 5px;
+}
+
+.carousel{
+    border: black solid;
+
+    width: 100%;
+    height: 50%;
+    
+}
+
+#quote-display{
+    color: white;
+    font-size: large;
+}
