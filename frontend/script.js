@@ -11,6 +11,7 @@ const exitButton = document.querySelector(".submitAnswer")
 const questionsSection = document.getElementById("questions_section")
 const endSection = document.getElementById("end_section")
 const subject3 = document.querySelector("#historyButton")
+//const ildikoDiv = document.querySelector("#ildiko-div")
 let gamePlay = true;
 
 //score that counts current player's score and total questions asked 
@@ -98,10 +99,18 @@ function exitGame(){
     score_reset = 0
     localStorage.setItem('score', score_reset) 
 }
-
+function checkNumberOfQuestions(){
+    //here I'm going to get the value of the div 
+    let numberFromDiv =3;
+    if (numberFromDiv){
+        return numberFromDiv
+    }else{
+        return 5
+    }
+}
 // Get a number of questions at the time only 
-let numberOfQuestions = 3;
 async function getThreeQuestion(){
+    let numberOfQuestions = checkNumberOfQuestions();
     const options = {
         method: "GET"
     }
