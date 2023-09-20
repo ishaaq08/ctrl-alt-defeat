@@ -45,27 +45,24 @@ if (correct_element == clicked_answer){
     setTimeout(function(){
         clicked_element.parentElement.style.background = "white"
     }, 300)
-    // setTimeout(function(){
-    //     window.reload();
-    // }, 3000)
     counter++;
     }else{
     clicked_element.style.color= 'red';
     setTimeout(function(){
         clicked_element.style.color = "black"
     }, 250)
-    // setTimeout(function(){
-    //     window.reload();
-    // }, 3000)
     counter++;
     }
 }
 //random index functions to shuffle answers later
 function getIndexForAnswers(){
-    // this function should add
+    // this function should suffles the indeces for either 4 options or 2
     allInd = [0,1,2,3]
+    twoInd = [0,1]
     const indX = allInd.sort(() => Math.random() - 0.5)
-    return indX
+    const twoindX =twoInd.sort(() => Math.random() - 0.5)
+    const arrayOfarrays = [indX, twoindX]
+    return arrayOfarrays
 }
 async function getRandomQuestion(){
     const options = {
@@ -80,15 +77,28 @@ function displayQuestion(data){
     // Assign a HTML element randomly to each answer
     question.textContent = data.question;
     const correctAnswer = data.correct_answer;
-    const wrongAnswersArray = data.incorrect_answers;
-    let indX = getIndexForAnswers(); //shuffled indexes
-    const answers = [answer1, answer2, answer3, answer4];
-    answers[indX[0]].textContent = correctAnswer;
-    answers[indX[1]].textContent = wrongAnswersArray[0];
-    answers[indX[2]].textContent = wrongAnswersArray[1];
-    answers[indX[3]].textContent = wrongAnswersArray[2];
-    correct_element = answers[indX[0]].innerText
-    console.log(correct_element)
+    const wrongAnswersArray = data.incorrect_answers; 
+    let arrays = getIndexForAnswers(); //shuffled indexes
+    indX = arrays[0];
+    twoindX = arrays[1];
+    //if there are two answer options only
+    if (wrongAnswersArray.length < 3){
+        const answers = [answer2, answer3];
+        answers[twoindX[0]].textContent = correctAnswer;
+        answers[twoindX[1]].textContent = wrongAnswersArray[0];
+        //set none used elements to hidden
+        answer1.style.display ='none';
+        answer4.style.display ='none';
+    }else{
+        // if there are 4 options to choose from 
+        const answers = [answer1, answer2, answer3, answer4];
+        answers[indX[0]].textContent = correctAnswer;
+        answers[indX[1]].textContent = wrongAnswersArray[0];
+        answers[indX[2]].textContent = wrongAnswersArray[1];
+        answers[indX[3]].textContent = wrongAnswersArray[2];
+        correct_element = answers[indX[0]].innerText
+        console.log(correct_element)
+    }
 }
 function exitGame(){
     console.log("we reached the exitGame function")
