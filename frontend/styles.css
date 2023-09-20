@@ -161,3 +161,19 @@ body {
     transition-duration: 0.2s;
     background-image: linear-gradient(rgb(110, 216, 91), rgb(196, 213, 219))
 } */
+
+.new-quiz-button{
+    width: 27vw;
+    height: 27vh;
+
+    margin: 5px;
+
+
+
+}
+
+.new-quiz-button:hover{
+   transform: scale(1.1);
+ 
+    
+}
