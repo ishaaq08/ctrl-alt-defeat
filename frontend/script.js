@@ -15,44 +15,49 @@ let gamePlay = true;
 
 //score that counts current player's score and total questions asked 
 let score = 0;
-let round = 0;
 
 //store our score in LocalStorage
 if(localStorage.getItem('score') != null){
     score = localStorage.getItem('score')
     scoreField.textContent =localStorage.getItem('score')
 }
-//click on the answers -- works on the div only 
+//click on the answers
 answer_buttons.forEach(item =>{
     item.addEventListener('click', e=>{
         console.log("we are listening")
         checkRight(e)
     })
 })
-
-
 //click on the exit button 
 exitButton.addEventListener('click', exitGame)
 
 function checkRight(e){
-  let clicked_answer = e.target.innerText
-  let clicked_element = e.target
-  console.log(clicked_answer)
-  console.log(correct_element)
-  if (correct_element == clicked_answer){
+let counter = 0;
+let clicked_answer = e.target.innerText
+let clicked_element = e.target
+console.log(correct_element)
+if (correct_element == clicked_answer){
     score++;
     localStorage.setItem('score', score)
     scoreField.textContent = localStorage.getItem('score')
     clicked_element.parentElement.style.background = "green";
     setTimeout(function(){
-        location.reload()
-    }, 3000)
-  }else{
-    clicked_element.style.color = "red";
+        clicked_element.parentElement.style.background = "white"
+    }, 300)
+    // setTimeout(function(){
+    //     window.reload();
+    // }, 3000)
+    counter++;
+    }else{
+    clicked_element.style.color= 'red';
     setTimeout(function(){
-        location.reload()
-    }, 3000)
-  }
+        clicked_element.style.color = "black"
+    }, 250)
+    // setTimeout(function(){
+    //     window.reload();
+    // }, 3000)
+    counter++;
+    }
 }
 //random index functions to shuffle answers later
 function getIndexForAnswers(){
@@ -68,6 +73,7 @@ async function getRandomQuestion(){
     const response = await fetch("http://localhost:3000/quiz/random", options);
     const data = await response.json()
     displayQuestion(data)
+    console.log(data)
 }
 function displayQuestion(data){
     // Assign a HTML element randomly to each answer
@@ -89,18 +95,38 @@ function exitGame(){
     exitButton.style.display = 'none';
     endSection.textContent = "Thank you for playing!"
     scoreField1.textContent = "Correct Answers: "
-    //get percentage doesn't work yet
-    //let calcPercentage = ((localStorage.getItem('score'))/total)*100
-    console.log(total)
     score_reset = 0
     localStorage.setItem('score', score_reset) 
 }
-function getThreeQuestion(){
-    getRandomQuestion()
-    //exitGame()
-}
-getRandomQuestion()
 
-// for (i=0; i<3;i++){
-//     getThreeQuestion()
-// }
+// Get a number of questions at the time only 
+let numberOfQuestions = 3;
+async function getThreeQuestion(){
+    const options = {
+        method: "GET"
+    }
+    const response = await fetch("http://localhost:3000/quiz/random/all", options);
+    const data = await response.json()
+    reducedObject = data.slice(0,numberOfQuestions)
+    console.log(reducedObject)
+    for(let i=0; i<reducedObject.length; i++){
+        displayQuestion(reducedObject[i]);
+        console.log("we are waiting for a click!")
+        await getClick();
+        console.log("click happened!")
+    }
+    exitGame()
+}
+getThreeQuestion()
+//getRandomQuestion()
+
+// making a function that returns a promise and waits for a click 
+function getClick() {
+    return new Promise(acc => {
+        function handleClick() {
+          document.removeEventListener('click', handleClick);
+          acc();
+        }
+        document.addEventListener('click', handleClick);
+      });
+    }
