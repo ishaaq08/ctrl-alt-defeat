@@ -6,10 +6,13 @@
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js" defer></script>
         <title>Select a Game</title>
     </head>
 
 <body class="bg-image">
+
+  <!-- Navigation Bar -->
 
     <section id="navbar-section">
         <nav class="navbar navbar navbar-expand-md navbar-light bg-light">
@@ -42,40 +45,52 @@
     </section>
 
     
+<!-- Jumbotron -->
 
     <div class="jumbotron text-center">
         <h1>Select a Game</h1>
     </div>
 
-    <div class="container">
+    <!-- 2 Quiz Buttons -->
+
+    <div class="container quizBtnParent">
         <div class="row py-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center my-auto ">
-                <a href="quiz.html" class="btn btn-secondary btn-lg btn-block">Quiz</a>
+            <div class="col-md-6 text-end my-auto">
+                <a href="#" class="btn quiz-button-10 game btn-secondary btn-lg btn-block text-center">Quiz 10Qs</a>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-6 text-start my-auto">
+              <a href="#" class="btn quiz-button-50 game btn-secondary btn-sm btn-block">Quiz 50Qs</a>
+          </div>
         </div>
-    </div>
+      </div>
+
+    <!-- Game 1 -->
 
     <div class="container">
-        <div class="row py-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center my-auto ">
-                <a href="#" class="btn btn-secondary btn-lg btn-block">Game 1</a>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
+      <div class="row py-5">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 text-center my-auto ">
+              <a href="#" class="btn game btn-secondary btn-lg btn-block">Game 1</a>
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+  </div> 
 
-    <div class="container">
-        <div class="row py-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center my-auto ">
-                <a href="#" class="btn btn-secondary btn-lg btn-block">Game 2</a>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
+  <!-- Game 2 -->
+
+  <div class="container">
+      <div class="row py-5">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 text-center my-auto ">
+              <a href="#" class="btn game btn-secondary btn-lg btn-block">Game 2</a>
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+  </div>
+
+
+
+    <!-- Footer -->
 
     <div class="container-fluid">
         <footer class="bg-light text-center">
@@ -95,7 +110,7 @@
                   </div>
                 </div>
                 <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-1">
+                  <button type="submit" class="btn btn-primary mb-1" id="btn-footer">
                     Subscribe
                   </button>
                 </div>
