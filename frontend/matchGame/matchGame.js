@@ -2,10 +2,14 @@ const cards = document.querySelectorAll('.pair-container');
 
 let selectedCards = [];
 let matchedCards = [];
+console.log(window.innerHeight, window.innerWidth)
+
 function openPopup() {
-  const leftPosition = (screen.availWidth - 700) / 2;
-  const topPosition = (screen.availHeight - 700) / 2;
-  return window.open('popup.html', 'PopupWindow', `width=700,height=700,left=${leftPosition},top=${topPosition}`);
+  const screenWidth = window.innerWidth;
+  const screenHeight = window.innerHeight;
+  const leftPosition = (screenWidth - 700)/2
+  const topPosition = (screenHeight -700)/2
+  return window.open('matchGame/popup.html', 'center window', `width=700,height=700,left=${leftPosition},top=${topPosition}, location=0`);
 }
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
