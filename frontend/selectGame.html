@@ -6,8 +6,8 @@
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="index.js" defer></script>
-        <script src="script.js" defer></script>
+        <script defer src="index.js" defer></script>
+        <script defer src="script.js" defer></script>
         <title>Select a Game</title>
     </head>
 
@@ -31,11 +31,11 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-4 text-center my-auto">
-                <a href="quiz.html"><button class="new-quiz-button"><h3>Quiz - 10 Questions</h3><br><p>Enjoy a interactive quiz featuring 10 questions</p></button></a>
+                <a><button class="new-quiz-button quiz-button-10" value="10" onclick="storeVariables()"><h3>Quiz - 10 Questions</h3><br><p>Enjoy a interactive quiz featuring 10 questions</p></button></a>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-4 text-center my-auto">
-                <a href="quiz.html"><button class="new-quiz-button"><h3>Quiz - 50 Questions</h3><br><p>Enjoy a interactive quiz featuring 50 questions</p></button></a>
+                <a><button class="new-quiz-button quiz-button-50" value="50" onclick="storeVariables()"><h3>Quiz - 50 Questions</h3><br><p>Enjoy a interactive quiz featuring 50 questions</p></button></a>
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -52,8 +52,8 @@
             <div class="col-md-1"></div>
         </div>
   </div>
-
-  <div class="ildiko-div hidden"></div>
+<!-- I set it to 15 just to test, maybe have it as 'default' as well -->
+  <div id="ildiko-div" class="ildiko-div hidden">1</div>
 
 
     <!-- Footer -->
@@ -76,5 +76,4 @@ $("#container_footer").load("footer.html");
 </script>
 
 </body>
-
 </html>

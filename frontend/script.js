@@ -11,17 +11,31 @@ const exitButton = document.querySelector(".submitAnswer")
 const questionsSection = document.getElementById("questions_section")
 const endSection = document.getElementById("end_section")
 const subject3 = document.querySelector("#historyButton")
-//const ildikoDiv = document.querySelector("#ildiko-div")
-let gamePlay = true;
+const endDiv = document.querySelector(".endDiv")
 
-//score that counts current player's score and total questions asked 
+
+/////SETTING ESSENTIAL VARIABLES
 let score = 0;
-
+//function to get variables from localStorage
+function getVariables(){
+    //retrieve
+    let numberOfQuestions = localStorage.getItem("numberOfQuestions")
+    score = localStorage.getItem("score") //strings!!
+    numberOfQuestions = parseInt(numberOfQuestions)
+    score = parseInt(score)
+    let variables = [numberOfQuestions, score]
+    return variables
+}
+// set score globally accessible
+let variables = getVariables();
+score = variables[1];
 //store our score in LocalStorage
 if(localStorage.getItem('score') != null){
     score = localStorage.getItem('score')
     scoreField.textContent =localStorage.getItem('score')
 }
+
+////////MAJOR CLICK EVENTS /////////////////
 //click on the answers
 answer_buttons.forEach(item =>{
     item.addEventListener('click', e=>{
@@ -29,11 +43,13 @@ answer_buttons.forEach(item =>{
         checkRight(e)
     })
 })
-//click on the exit button 
-exitButton.addEventListener('click', exitGame)
 
+
+/////////////////////// GAME FUNCTIONS ////////////////////////
+//click on the exit button event 
+exitButton.addEventListener('click', exitGame)
+//check if the clicked answer is correct
 function checkRight(e){
-let counter = 0;
 let clicked_answer = e.target.innerText
 let clicked_element = e.target
 console.log(correct_element)
@@ -45,13 +61,11 @@ if (correct_element == clicked_answer){
     setTimeout(function(){
         clicked_element.parentElement.style.background = "white"
     }, 300)
-    counter++;
     }else{
     clicked_element.style.color= 'red';
     setTimeout(function(){
         clicked_element.style.color = "black"
     }, 250)
-    counter++;
     }
 }
 //random index functions to shuffle answers later
@@ -90,7 +104,10 @@ function displayQuestion(data){
         answer1.style.display ='none';
         answer4.style.display ='none';
     }else{
-        // if there are 4 options to choose from 
+        // if there are 4 options to choose from
+        //just in case we load after a 2 option question, reset styles on elements
+        answer1.style.display = "";
+        answer4.style.display = "";
         const answers = [answer1, answer2, answer3, answer4];
         answers[indX[0]].textContent = correctAnswer;
         answers[indX[1]].textContent = wrongAnswersArray[0];
@@ -104,41 +121,36 @@ function exitGame(){
     console.log("we reached the exitGame function")
     questionsSection.style.display = 'none';
     exitButton.style.display = 'none';
-    endSection.textContent = "Thank you for playing!"
+    endDiv.textContent = "Thank you for playing!"
+    endDiv.style.fontSize = "large";
     scoreField1.textContent = "Correct Answers: "
     score_reset = 0
     localStorage.setItem('score', score_reset) 
 }
-function checkNumberOfQuestions(){
-    //here I'm going to get the value of the div 
-    let numberFromDiv =3;
-    if (numberFromDiv){
-        return numberFromDiv
-    }else{
-        return 5
-    }
-}
+///////////////RUN GAME FUNCTION ///////////////////
 // Get a number of questions at the time only 
-async function getThreeQuestion(){
-    let numberOfQuestions = checkNumberOfQuestions();
+async function getNumberOfQuestion(){
+    let localVariables = getVariables();
+    let numberOfQuestion = localVariables[0];
     const options = {
         method: "GET"
     }
     const response = await fetch("http://localhost:3000/quiz/random/all", options);
     const data = await response.json()
-    reducedObject = data.slice(0,numberOfQuestions)
+    reducedObject = data.slice(0,numberOfQuestion)
     console.log(reducedObject)
     for(let i=0; i<reducedObject.length; i++){
         displayQuestion(reducedObject[i]);
         console.log("we are waiting for a click!")
+        //console.log(ildikoDiv.textContent)
         await getClick();
         console.log("click happened!")
     }
     exitGame()
 }
-getThreeQuestion()
-//getRandomQuestion()
+getNumberOfQuestion()
 
+/// ACCESSORY FUNCTIONS ////////
 // making a function that returns a promise and waits for a click 
 function getClick() {
     return new Promise(acc => {
