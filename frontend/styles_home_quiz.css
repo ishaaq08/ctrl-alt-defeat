@@ -1,6 +1,4 @@
-body {
-    /* This is for the navbar to not overlap sections */
-    padding-top: 15px; }
+
 @media screen and (max-width: 768px) {
     body { padding-top: 0px; }
 }
