@@ -2,9 +2,6 @@ const quizButton10 = document.querySelector(".quiz-button-10")
 
 const quizButton50 = document.querySelector(".quiz-button-50")
 
-// const ildikoDiv = document.querySelector(".ildiko-div")
-// console.log(ildikoDiv);
-// console.log(quizButton10.getAttribute("value"))
 
 quizButton10.addEventListener("click", ()=> {
     storeVariables(quizButton10.getAttribute("value"))
