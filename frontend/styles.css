@@ -68,6 +68,12 @@ p{
     padding-inline: 4px;
 }
 
+.intro-text{
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+}
+
 .quiz-button{
     background-image: linear-gradient(rgb(74, 114, 246), rgb(62, 148, 183));
 } 
@@ -217,6 +223,11 @@ p{
     border-radius: 15%;
 
     transition: all 0.2s ease-in;
+}
+
+.new-quiz-button.subject{
+    height: 23vh;
+    width: 80%;
 }
 
 .parent-container{
