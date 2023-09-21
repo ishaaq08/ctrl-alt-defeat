@@ -30,7 +30,7 @@
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
-    "question": "Which naval battle was considered the turning point of the Pacific Ocean Theater during World War 2?",
+    "question": "Which naval battle was considered the turning point of the Pacific Ocean Theater during World War II?",
     "correct_answer": "Battle of Midway",
     "incorrect_answers": [
       "Attack on Truk Island",
@@ -39,10 +39,11 @@
     ]
   },
   {
+    "id": 4,
     "category": "History",
     "type": "multiple",
     "difficulty": "easy",
-    "question": "Which German field marshal was known as the `Desert Fox`?",
+    "question": "Which German field marshal was known as the 'Desert Fox'?",
     "correct_answer": "Erwin Rommel",
     "incorrect_answers": [
       "Ernst Busch",
@@ -51,6 +52,7 @@
     ]
   },
   {
+    "id": 5,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -63,6 +65,7 @@
     ]
   },
   {
+    "id": 6,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -75,10 +78,11 @@
     ]
   },
   {
+    "id": 7,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "Which country had an &quot;Orange Revolution&quot; between 2004 and 2005?",
+    "question": "Which country had an 'Orange Revolution' between 2004 and 2005?",
     "correct_answer": "Ukraine",
     "incorrect_answers": [
       "Belarus",
@@ -87,10 +91,11 @@
     ]
   },
   {
+    "id": 8,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "When did Jamaica recieve its independence from England? ",
+    "question": "When did Jamaica receive its independence from England?",
     "correct_answer": "1962",
     "incorrect_answers": [
       "1492",
@@ -99,10 +104,11 @@
     ]
   },
   {
+    "id": 9,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "Which of the following is NOT classified as a Semetic language?",
+    "question": "Which of the following is NOT classified as a Semitic language?",
     "correct_answer": "Sumerian",
     "incorrect_answers": [
       "Maltese",
@@ -111,6 +117,7 @@
     ]
   },
   {
+    "id": 10,
     "category": "History",
     "type": "multiple",
     "difficulty": "easy",
@@ -123,22 +130,24 @@
     ]
   },
   {
+    "id": 11,
     "category": "History",
     "type": "multiple",
     "difficulty": "easy",
-    "question": "What was Manfred von Richthofen&#039;s nickname?",
+    "question": "What was Manfred von Richthofen's nickname?",
     "correct_answer": "The Red Baron",
     "incorrect_answers": [
       "The High Flying Ace",
-      "The Blue Serpent ",
+      "The Blue Serpent",
       "The Germany Gunner"
     ]
   },
   {
+    "id": 12,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "On which day did the attempted coup d&#039;etat of 1991 in the Soviet Union begin?",
+    "question": "On which day did the attempted coup d'etat of 1991 in the Soviet Union begin?",
     "correct_answer": "August 19",
     "incorrect_answers": [
       "August 21",
@@ -147,6 +156,7 @@
     ]
   },
   {
+    "id": 13,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
@@ -159,6 +169,7 @@
     ]
   },
   {
+    "id": 14,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
@@ -171,6 +182,7 @@
     ]
   },
   {
+    "id": 15,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
@@ -183,6 +195,7 @@
     ]
   },
   {
+    "id": 16,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
@@ -195,10 +208,11 @@
     ]
   },
   {
+    "id": 17,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "What year did the Boxing Day earthquake &amp; tsunami occur in the Indian Ocean?",
+    "question": "What year did the Boxing Day earthquake & tsunami occur in the Indian Ocean?",
     "correct_answer": "2004",
     "incorrect_answers": [
       "2006",
@@ -207,8 +221,9 @@
     ]
   },
   {
+    "id": 18,
     "category": "History",
-    "type": "multiple",
+    "type": "easy",
     "difficulty": "easy",
     "question": "Who was the Prime Minister of Japan when Japan declared war on the US?",
     "correct_answer": "Hideki Tojo",
@@ -219,32 +234,35 @@
     ]
   },
   {
+    "id": 19,
     "category": "History",
     "type": "boolean",
     "difficulty": "medium",
-    "question": "United States President Ronald Reagan was the first president to appoint a woman to the Supreme Court. ",
+    "question": "United States President Ronald Reagan was the first president to appoint a woman to the Supreme Court.",
     "correct_answer": "True",
     "incorrect_answers": [
       "False"
     ]
   },
   {
+    "id": 20,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
-    "question": "What was Napoleon Bonaparte&#039;s name before he changed it?",
+    "question": "What was Napoleon Bonaparte's name before he changed it?",
     "correct_answer": "Napoleone di Buonaparte",
     "incorrect_answers": [
       "Naapolion van Bonijpaart",
-      "Napole&atilde;o do Boaparte",
+      "Napoleão do Boaparte",
       "Napoleona de Buenoparte"
     ]
   },
   {
+    "id": 21,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
-    "question": "What was found in 1946 by two young shepards near a cave?",
+    "question": "What was found in 1946 by two young shepherds near a cave?",
     "correct_answer": "Dead Sea Scrolls",
     "incorrect_answers": [
       "The Blackbeard Chest",
@@ -253,6 +271,7 @@
     ]
   },
   {
+    "id": 22,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
@@ -265,6 +284,7 @@
     ]
   },
   {
+    "id": 23,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -273,10 +293,11 @@
     "incorrect_answers": [
       "John Adams",
       "George Washington",
-      "James Monroe "
+      "James Monroe"
     ]
   },
   {
+    "id": 24,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -289,6 +310,7 @@
     ]
   },
   {
+    "id": 25,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -297,15 +319,16 @@
     "incorrect_answers": [
       "German Democratic Republic",
       "Federal Republic of Germany",
-      "Oesterreich "
+      "Oesterreich"
     ]
   },
   {
+    "id": 26,
     "category": "History",
     "type": "multiple",
     "difficulty": "easy",
-    "question": "Which of the following countries was not an axis power during World War II?",
-    "correct_answer": " Soviet Union",
+    "question": "Which of the following countries was not an Axis power during World War II?",
+    "correct_answer": "Soviet Union",
     "incorrect_answers": [
       "Italy",
       "Germany",
@@ -313,6 +336,7 @@
     ]
   },
   {
+    "id": 27,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -325,6 +349,7 @@
     ]
   },
   {
+    "id": 28,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -337,6 +362,7 @@
     ]
   },
   {
+    "id": 29,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
@@ -349,10 +375,11 @@
     ]
   },
   {
+    "id": 30,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
-    "question": "The main objective of the German operation &quot;Case Blue&quot; during World War II was originally to capture what?",
+    "question": "The main objective of the German operation 'Case Blue' during World War II was originally to capture what?",
     "correct_answer": "Caucasus",
     "incorrect_answers": [
       "Stalingrad",
@@ -361,6 +388,7 @@
     ]
   },
   {
+    "id": 31,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -373,10 +401,11 @@
     ]
   },
   {
+    "id": 32,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "What year did Skoal, a smokeless Tobacco company, release their first line of Pouches, known as &quot;Skoal Bandits&quot;?",
+    "question": "What year did Skoal, a smokeless Tobacco company, release their first line of Pouches, known as 'Skoal Bandits'?",
     "correct_answer": "1983",
     "incorrect_answers": [
       "1934",
@@ -385,10 +414,11 @@
     ]
   },
   {
+    "id": 33,
     "category": "History",
     "type": "multiple",
     "difficulty": "easy",
-    "question": "Which modern country is known as &quot;The Graveyard of Empires&quot;?",
+    "question": "Which modern country is known as 'The Graveyard of Empires'?",
     "correct_answer": "Afghanistan",
     "incorrect_answers": [
       "China",
@@ -397,6 +427,7 @@
     ]
   },
   {
+    "id": 34,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -409,6 +440,7 @@
     ]
   },
   {
+    "id": 35,
     "category": "History",
     "type": "boolean",
     "difficulty": "easy",
@@ -419,6 +451,7 @@
     ]
   },
   {
+    "id": 36,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -431,6 +464,7 @@
     ]
   },
   {
+    "id": 37,
     "category": "History",
     "type": "boolean",
     "difficulty": "medium",
@@ -441,6 +475,7 @@
     ]
   },
   {
+    "id": 38,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -453,6 +488,7 @@
     ]
   },
   {
+    "id": 39,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
@@ -465,135 +501,133 @@
     ]
   },
   {
+    "id": 40,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the name of the two boats that Columbus sailed in during his voyage to the New World?",
+    "correct_answer": "Nina and Pinta",
+    "incorrect_answers": [
+      "Santa Maria and La Niña",
+      "Santa Clara and La Pinta",
+      "Santa Maria and La Santa"
+    ]
+  },
+  {
+    "id": 41,
     "category": "History",
     "type": "multiple",
     "difficulty": "easy",
-    "question": "What does the United States of America celebrate during the 4th of July?",
-    "correct_answer": "The signing of the Declaration of Independence",
+    "question": "In Roman numerals, what number is represented as 'D'?",
+    "correct_answer": "500",
     "incorrect_answers": [
-      "The anniversary of the Battle of Gettysburg",
-      "The crossing of the Delaware River",
-      "The ratification of the Constitution"
+      "100",
+      "1000",
+      "50"
     ]
   },
   {
+    "id": 42,
     "category": "History",
     "type": "multiple",
     "difficulty": "hard",
-    "question": "Which U.S. president was said to have been too honest to lie to his father about chopping down a cherry tree?",
-    "correct_answer": "George Washington",
+    "question": "What are Panama hats made out of?",
+    "correct_answer": "Straw",
     "incorrect_answers": [
-      "Abraham Lincoln",
-      "Thomas Jefferson",
-      "James Monroe"
+      "Wool",
+      "Cotton",
+      "Linen"
     ]
   },
   {
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "After the 1516 Battle of Marj Dabiq, the Ottoman Empire took control of Jerusalem from which sultanate?",
-    "correct_answer": "Mamluk",
-    "incorrect_answers": [
-      "Ayyubid",
-      "Ummayyad",
-      "Seljuq"
-    ]
-  },
-  {
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "The son of which pope supposedly held a lecherous f&ecirc;te involving 50 courtesans in the papal palace?",
-    "correct_answer": "Alexander VI",
-    "incorrect_answers": [
-      "Innocent V",
-      "Urban II",
-      "Pius III"
-    ]
-  },
-  {
+    "id": 43,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "The Panama Canal was finished under the administration of which U.S. president?",
-    "correct_answer": "Woodrow Wilson",
+    "question": "Which of the following countries were not an Axis power during World War II?",
+    "correct_answer": "Finland",
     "incorrect_answers": [
-      "Franklin Delano Roosevelt",
-      "Herbert Hoover",
-      "Theodore Roosevelt"
+      "Hungary",
+      "Romania",
+      "Bulgaria"
     ]
   },
   {
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Which of these positions did the astronomer and physicist Isaac Newton not hold?",
-    "correct_answer": "Surveyor to the City of London",
-    "incorrect_answers": [
-      "Professor of Mathematics",
-      "Warden of the Royal Mint",
-      "Member of Parliament"
-    ]
-  },
-  {
+    "id": 44,
     "category": "History",
     "type": "multiple",
     "difficulty": "medium",
-    "question": "The fraudelent doctor John R. Brinkley acummulated great fame and wealth in the early 1900s offering what service?",
-    "correct_answer": "Goat testicles transplant",
+    "question": "Which Empire was ruled by Emperor Justinian?",
+    "correct_answer": "Byzantine Empire",
     "incorrect_answers": [
-      "Pig blood transfusion",
-      "Cow liver transplant",
-      "Turkey breast implants"
+      "Roman Empire",
+      "Ottoman Empire",
+      "Austrian Empire"
     ]
   },
   {
+    "id": 45,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the first event that sparked World War I?",
+    "correct_answer": "Assassination of Archduke Franz Ferdinand of Austria",
+    "incorrect_answers": [
+      "Invasion of Poland",
+      "Treaty of Versailles",
+      "Russian Revolution"
+    ]
+  },
+  {
+    "id": 46,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the first successful heavier-than-air powered aircraft?",
+    "correct_answer": "Wright Flyer",
+    "incorrect_answers": [
+      "Wright Glider",
+      "Curtiss Flyer",
+      "Blériot XI"
+    ]
+  },
+  {
+    "id": 47,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which country did the French Foreign Legion fight an 8-year war against from 1954?",
+    "correct_answer": "Algeria",
+    "incorrect_answers": [
+      "Morocco",
+      "Tunisia",
+      "Libya"
+    ]
+  },
+  {
+    "id": 48,
     "category": "History",
     "type": "multiple",
     "difficulty": "easy",
-    "question": "Which famous military commander marched an army, which included war elephants, over the Alps during the Second Punic War?",
-    "correct_answer": "Hannibal",
+    "question": "Which ship did Christopher Columbus command during his first voyage to America in 1492?",
+    "correct_answer": "Santa Maria",
     "incorrect_answers": [
-      "Garmanicus",
-      "Alexander the Great",
-      "Tiberius"
+      "Nina",
+      "Pinta",
+      "San Juan"
     ]
   },
   {
+    "id": 49,
     "category": "History",
     "type": "multiple",
-    "difficulty": "hard",
-    "question": "Which country did the Eureka Rebellion, an 1856 battle against colonial rule, take place in?",
-    "correct_answer": "Australia",
+    "difficulty": "easy",
+    "question": "What year was the United Nations founded?",
+    "correct_answer": "1945",
     "incorrect_answers": [
-      "India",
-      "Canada",
-      "Brazil"
-    ]
-  },
-  {
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "medium",
-    "question": "Which Nazi General was known as the &quot;Desert Fox&quot;?",
-    "correct_answer": "Erwin Rommel",
-    "incorrect_answers": [
-      "Gerd von Rundstadt",
-      "Wilhelm Keitel",
-      "Heinz Guderian "
-    ]
-  },
-  {
-    "category": "History",
-    "type": "multiple",
-    "difficulty": "hard",
-    "question": "Who is the creator of the soft drink, Dr. Pepper?",
-    "correct_answer": "Charles Alderton",
-    "incorrect_answers": [
-      "James Wellington",
-      "Johnson Hinsin",
-      "Boris Heviltik"
+      "1950",
+      "1932",
+      "1942"
     ]
   }
 ]
