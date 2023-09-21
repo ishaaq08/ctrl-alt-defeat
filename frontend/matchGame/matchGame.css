@@ -18,13 +18,28 @@
   .container > div {
     border: 1px solid #00000023;
     border-radius: 1rem;
+    transition: all 0.2s ease-in;
   }
 
   .container > div:hover {
     background-color: rgb(149, 147, 146);
     color: #fff;
-    transition: all 0.2s ease-in;
+    
+    animation-play-state: paused;
+    animation: swelling 0.5s ease-in forwards infinite alternate;
   }
+
+  .container > div:active {
+    background-color: rgb(82, 82, 82);
+  }
+
+  @keyframes swelling {
+    100% {
+      transform: scale(1.05)
+    }
+  }
+
+
 
   .changeBackground {
     background-color: red;
