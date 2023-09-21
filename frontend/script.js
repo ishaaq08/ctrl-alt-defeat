@@ -13,7 +13,6 @@ const endSection = document.getElementById("end_section")
 const subject3 = document.querySelector("#historyButton")
 const endDiv = document.querySelector(".endDiv")
 
-
 /////SETTING ESSENTIAL VARIABLES
 let score = 0;
 //function to get variables from localStorage
@@ -43,11 +42,11 @@ answer_buttons.forEach(item =>{
         checkRight(e)
     })
 })
-
-
-/////////////////////// GAME FUNCTIONS ////////////////////////
 //click on the exit button event 
 exitButton.addEventListener('click', exitGame)
+
+/////////////////////// GAME FUNCTIONS ////////////////////////
+
 //check if the clicked answer is correct
 function checkRight(e){
 let clicked_answer = e.target.innerText
@@ -66,6 +65,8 @@ if (correct_element == clicked_answer){
     setTimeout(function(){
         clicked_element.style.color = "black"
     }, 250)
+    //here I can try to add the wrong answers to a hidden 
+
     }
 }
 //random index functions to shuffle answers later
@@ -155,9 +156,9 @@ getNumberOfQuestion()
 function getClick() {
     return new Promise(acc => {
         function handleClick() {
-          document.removeEventListener('click', handleClick);
+            answers_cont.removeEventListener('click', handleClick);
           acc();
         }
-        document.addEventListener('click', handleClick);
+            answers_cont.addEventListener('click', handleClick);
       });
     }

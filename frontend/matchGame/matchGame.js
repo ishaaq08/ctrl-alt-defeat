@@ -34,8 +34,12 @@ async function getApiData() {
 }
 cards.forEach((card) => {
   card.addEventListener('click', () => {
-    if (selectedCards.length < 2 && !matchedCards.includes(cards)) {
+    const isCardSelected = selectedCards.includes(card);
+
+    if (!isCardSelected && selectedCards.length < 2 && !matchedCards.includes(card)) {
       selectedCards.push(card);
+
+      card.classList.add('clicked');
 
       console.log(selectedCards)
 
@@ -48,18 +52,27 @@ cards.forEach((card) => {
           matchedCards.push(firstCard, secondCard);
           selectedCards[0].style.backgroundColor = 'green';
           selectedCards[1].style.backgroundColor = 'green';
+          selectedCards[0].style.visibility = 'hidden';
+          selectedCards[1].style.visibility = 'hidden';
+    
+          
           selectedCards = [];
 
           console.log('Correct pair chosen');
           console.log(matchedCards)
 
           if (matchedCards.length === cards.length) {
-            openPopup();
+            setTimeout(() =>  {
+              openPopup();
+            }, 500) 
           } else{
             selectedCards = [];
           }
         }else {   
           console.log('Incorrect pair chosen');
+          selectedCards.forEach(card => {
+            card.classList.remove('clicked');
+          })
           selectedCards[0].classList.add('changeBackground');
           selectedCards[1].classList.add('changeBackground');
           setTimeout(() => {
@@ -70,7 +83,10 @@ cards.forEach((card) => {
           }, 1000);
           
         }
-      }
+      } 
+      } else if (isCardSelected) {
+        selectedCards.splice(selectedCards.indexOf(card), 1)
+        card.classList.remove('clicked')
     }
   })
 })
