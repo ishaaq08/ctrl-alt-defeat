@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles_home_quiz.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="/script.js"></script>
@@ -26,7 +26,7 @@
         <div class="container-fluid h-50 my-4">
             <div class="row introBox align-items-center justify-content-center">
                 <div class="col-lg-6 m-4 text-center">
-                    <p>At CTRL-ALT-DEFEAT, education becomes an adventure. Explore subjects, play games, and embark on a journey of discovery like never before. Get ready to learn, play, and thrive with us!</p>
+                    <p class="intro-text">At CTRL-ALT-DEFEAT, education becomes an adventure. Explore subjects, play games, and embark on a journey of discovery like never before. Get ready to learn, play, and thrive with us!</p>
                 </div>
                 
             </div>
@@ -34,25 +34,44 @@
     </section>
     <!-- Subject Choice -->
     <section id="subject_choice">
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
             <div class="row h-75 justify-content-center">
-                <div class="col-2 text-center eachsubject">
+                <div class="col-3 text-center eachsubject">
                     <div class="content">
                       <button type="button" class="new-quiz-button"><p>Literature</p></button>
                     </div>
                 </div>
-                <div class="col-2  text-center eachsubject">
+                <div class="col-3  text-center eachsubject">
                     <div class="content">
                       <button type="button" class="new-quiz-button"><p>Art</p></button>
                     </div> 
                 </div>
-                <div class="col-2 text-center eachsubject">
+                <div class="col-3 text-center eachsubject">
                     <div class="content">
-                      <button id="historyButton"  class="new-quiz-button"><a href="selectGame.html"><p>History</p></a></button>
+                      <a href="selectGame.html"><button id="historyButton"  class="new-quiz-button"><p>History</p></button></a>
                     </div>    
                 </div>
             </div>
+        </div> -->
+
+        <div class="row justify-content-center align-items-center">
+
+          <div class="col-md-3 text-center my-auto parent-container ">
+            <button type="button" class="new-quiz-button subject"><h3 class="btn-header">Literature</h3></p></button>
+          </div>
+
+          <div class="col-md-3 text-center my-auto parent-container">
+            <button type="button" class="new-quiz-button subject"><h3 class="btn-header">Art</h3></p></button>
+          </div>
+
+          <div class="col-md-3 text-center my-auto parent-container">
+            <a href="selectGame.html"><button id="historyButton"  class="new-quiz-button subject"><h3 class="btn-header">History</h3></button></a>
         </div>
+
+      </div>
+
+
+
     </section>
 
     <!-- footer -->
