@@ -12,6 +12,9 @@ const questionsSection = document.getElementById("questions_section")
 const endSection = document.getElementById("end_section")
 const subject3 = document.querySelector("#historyButton")
 const endDiv = document.querySelector(".endDiv")
+let correctAnswerDisplay = document.querySelector(".correct-answer")
+
+let wrongAnswersCollected = [];
 
 /////SETTING ESSENTIAL VARIABLES
 let score = 0;
@@ -51,7 +54,7 @@ exitButton.addEventListener('click', exitGame)
 function checkRight(e){
 let clicked_answer = e.target.innerText
 let clicked_element = e.target
-console.log(correct_element)
+//console.log(correct_element)
 if (correct_element == clicked_answer){
     score++;
     localStorage.setItem('score', score)
@@ -61,13 +64,22 @@ if (correct_element == clicked_answer){
         clicked_element.parentElement.style.background = "white"
     }, 300)
     }else{
-    clicked_element.style.color= 'red';
-    setTimeout(function(){
-        clicked_element.style.color = "black"
-    }, 250)
-    //here I can try to add the wrong answers to a hidden 
+        correctAnswerDisplay.textContent = `The right answer was: ${correct_element}`;
+        clicked_element.style.color= 'red';
 
-    }
+        setTimeout(function(){
+            clicked_element.style.color = "black";
+            correctAnswerDisplay.textContent = "";
+        }, 1000)
+        //here I can try to add the wrong answers to show them later
+        // sometimes correct_element playing up on true or false questions
+        if (correct_element && question && clicked_answer){
+            addToWrongAnswers(question.innerText, correct_element, clicked_answer)
+            console.log(wrongAnswersCollected)
+        }else{
+            console.log("we couldn't record a wrong answer this time")
+        }
+        }
 }
 //random index functions to shuffle answers later
 function getIndexForAnswers(){
@@ -91,6 +103,7 @@ async function getRandomQuestion(){
 function displayQuestion(data){
     // Assign a HTML element randomly to each answer
     question.textContent = data.question;
+    let questiondata = data.question;
     const correctAnswer = data.correct_answer;
     const wrongAnswersArray = data.incorrect_answers; 
     let arrays = getIndexForAnswers(); //shuffled indexes
@@ -143,22 +156,31 @@ async function getNumberOfQuestion(){
     for(let i=0; i<reducedObject.length; i++){
         displayQuestion(reducedObject[i]);
         console.log("we are waiting for a click!")
-        //console.log(ildikoDiv.textContent)
         await getClick();
         console.log("click happened!")
+
     }
     exitGame()
 }
 getNumberOfQuestion()
 
 /// ACCESSORY FUNCTIONS ////////
-// making a function that returns a promise and waits for a click 
+// a function that returns a promise and waits for a click 
 function getClick() {
     return new Promise(acc => {
         function handleClick() {
-            answers_cont.removeEventListener('click', handleClick);
-          acc();
+            setTimeout(() =>{answers_cont.removeEventListener('click', handleClick);
+            acc();}, 1000)
+            
         }
             answers_cont.addEventListener('click', handleClick);
       });
     }
+// saving all the questions the user did a mistake on
+ function addToWrongAnswers(question, correctA, userInput){
+    if (question in wrongAnswersCollected){
+        console.log("This Question appeared twice")
+    }else{
+        wrongAnswersCollected.push([question, correctA, userInput])
+    }
+ }
