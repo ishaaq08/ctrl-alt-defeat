@@ -44,10 +44,10 @@ answer_buttons.forEach(item =>{
     })
 })
 
-
 /////////////////////// GAME FUNCTIONS ////////////////////////
 //click on the exit button event 
 exitButton.addEventListener('click', exitGame)
+
 //check if the clicked answer is correct
 function checkRight(e){
 let clicked_answer = e.target.innerText
@@ -155,9 +155,9 @@ getNumberOfQuestion()
 function getClick() {
     return new Promise(acc => {
         function handleClick() {
-          document.removeEventListener('click', handleClick);
+            answers_cont.removeEventListener('click', handleClick);
           acc();
         }
-        document.addEventListener('click', handleClick);
+            answers_cont.addEventListener('click', handleClick);
       });
     }
