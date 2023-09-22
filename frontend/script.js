@@ -189,7 +189,6 @@ async function getNumberOfQuestion(){
     }
     exitGame()
 }
-
 /// ACCESSORY FUNCTIONS ////////
 // a function that returns a promise and waits for a click 
 function getClick() {
@@ -209,7 +208,6 @@ function getClick() {
         wrongAnswersCollected.push([question, correctA, userInput])
     }
  }
-
  function addCell(tr,text){
     let td = tr.insertCell();
     td.textContent = text;
