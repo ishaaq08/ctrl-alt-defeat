@@ -1,0 +1,633 @@
+[
+  {
+    "id": 1,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "King Henry VIII was the second monarch of which European royal house?",
+    "correct_answer": "Tudor",
+    "incorrect_answers": [
+      "York",
+      "Stuart",
+      "Lancaster"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "During the Mongolian invasions of Japan, what were the Mongol boats mostly stopped by?",
+    "correct_answer": "Typhoons",
+    "incorrect_answers": [
+      "Tornados",
+      "Economic depression",
+      "Samurai"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Which naval battle was considered the turning point of the Pacific Ocean Theater during World War II?",
+    "correct_answer": "Battle of Midway",
+    "incorrect_answers": [
+      "Attack on Truk Island",
+      "Attack on Pearl Harbor",
+      "Battle of the Coral Sea"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which German field marshal was known as the 'Desert Fox'?",
+    "correct_answer": "Erwin Rommel",
+    "incorrect_answers": [
+      "Ernst Busch",
+      "Wolfram Freiherr von Richthofen",
+      "Wilhelm List"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the capital of South Vietnam before the Vietnam War?",
+    "correct_answer": "Saigon",
+    "incorrect_answers": [
+      "Ho Chi Minh City",
+      "Hanoi",
+      "Hue"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the first explorer to sail to North America?",
+    "correct_answer": "Leif Erikson",
+    "incorrect_answers": [
+      "Christopher Columbus",
+      "Amerigo Vespucci",
+      "Ferdinand Magellan"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which country had an 'Orange Revolution' between 2004 and 2005?",
+    "correct_answer": "Ukraine",
+    "incorrect_answers": [
+      "Belarus",
+      "Latvia",
+      "Lithuania"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "When did Jamaica receive its independence from England?",
+    "correct_answer": "1962",
+    "incorrect_answers": [
+      "1492",
+      "1963",
+      "1987"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of the following is NOT classified as a Semitic language?",
+    "correct_answer": "Sumerian",
+    "incorrect_answers": [
+      "Maltese",
+      "Akkadian",
+      "Mandaic"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of these countries remained neutral during World War II?",
+    "correct_answer": "Switzerland",
+    "incorrect_answers": [
+      "United Kingdom",
+      "France",
+      "Italy"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What was Manfred von Richthofen's nickname?",
+    "correct_answer": "The Red Baron",
+    "incorrect_answers": [
+      "The High Flying Ace",
+      "The Blue Serpent",
+      "The Germany Gunner"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "On which day did the attempted coup d'etat of 1991 in the Soviet Union begin?",
+    "correct_answer": "August 19",
+    "incorrect_answers": [
+      "August 21",
+      "December 26",
+      "December 24"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "When did Canada leave the confederation to become their own nation?",
+    "correct_answer": "July 1st, 1867",
+    "incorrect_answers": [
+      "July 1st, 1763",
+      "July 1st, 1832",
+      "July 1st, 1902"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "When was the SS or Schutzstaffel established?",
+    "correct_answer": "April 4th, 1925",
+    "incorrect_answers": [
+      "September 1st, 1941",
+      "March 8th, 1935",
+      "February 21st, 1926"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "When was Adolf Hitler appointed as Chancellor of Germany?",
+    "correct_answer": "January 30, 1933",
+    "incorrect_answers": [
+      "September 1, 1939",
+      "February 27, 1933",
+      "October 6, 1939"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "The Second Boer War in 1899 was fought where?",
+    "correct_answer": "South Africa",
+    "incorrect_answers": [
+      "Argentina",
+      "Nepal",
+      "Bulgaria"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What year did the Boxing Day earthquake & tsunami occur in the Indian Ocean?",
+    "correct_answer": "2004",
+    "incorrect_answers": [
+      "2006",
+      "2008",
+      "2002"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "History",
+    "type": "easy",
+    "difficulty": "easy",
+    "question": "Who was the Prime Minister of Japan when Japan declared war on the US?",
+    "correct_answer": "Hideki Tojo",
+    "incorrect_answers": [
+      "Michinomiya Hirohito",
+      "Isoroku Yamamoto",
+      "Fumimaro Konoe"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "History",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "United States President Ronald Reagan was the first president to appoint a woman to the Supreme Court.",
+    "correct_answer": "True",
+    "incorrect_answers": [
+      "False"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What was Napoleon Bonaparte's name before he changed it?",
+    "correct_answer": "Napoleone di Buonaparte",
+    "incorrect_answers": [
+      "Naapolion van Bonijpaart",
+      "Napoleão do Boaparte",
+      "Napoleona de Buenoparte"
+    ]
+  },
+  {
+    "id": 21,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What was found in 1946 by two young shepherds near a cave?",
+    "correct_answer": "Dead Sea Scrolls",
+    "incorrect_answers": [
+      "The Blackbeard Chest",
+      "Sheep",
+      "The First Oaxaca Cave Sleeper"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Who was the President of the United States during the signing of the Gadsden Purchase?",
+    "correct_answer": "Franklin Pierce",
+    "incorrect_answers": [
+      "Andrew Johnson",
+      "Abraham Lincoln",
+      "James Polk"
+    ]
+  },
+  {
+    "id": 23,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the first president born in the independent United States?",
+    "correct_answer": "Martin Van Buren",
+    "incorrect_answers": [
+      "John Adams",
+      "George Washington",
+      "James Monroe"
+    ]
+  },
+  {
+    "id": 24,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who is attributed credit for recording the epic poem The Odyssey?",
+    "correct_answer": "Homer",
+    "incorrect_answers": [
+      "Aristotle",
+      "Odysseus",
+      "Socrates"
+    ]
+  },
+  {
+    "id": 25,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the unofficial name for Germany between 1919 and 1933?",
+    "correct_answer": "Weimar Republic",
+    "incorrect_answers": [
+      "German Democratic Republic",
+      "Federal Republic of Germany",
+      "Oesterreich"
+    ]
+  },
+  {
+    "id": 26,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which of the following countries was not an Axis power during World War II?",
+    "correct_answer": "Soviet Union",
+    "incorrect_answers": [
+      "Italy",
+      "Germany",
+      "Japan"
+    ]
+  },
+  {
+    "id": 27,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "The United States Army Air Corps became the United States Air Force on what date?",
+    "correct_answer": "September 18, 1947",
+    "incorrect_answers": [
+      "December 14, 1946",
+      "October 27, 1945",
+      "November 08, 1944"
+    ]
+  },
+  {
+    "id": 28,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of the following countries was the first to send an object into space?",
+    "correct_answer": "Germany",
+    "incorrect_answers": [
+      "USA",
+      "Russia",
+      "China"
+    ]
+  },
+  {
+    "id": 29,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What was the original name of New York City?",
+    "correct_answer": "New Amsterdam",
+    "incorrect_answers": [
+      "New London",
+      "New Paris",
+      "New Rome"
+    ]
+  },
+  {
+    "id": 30,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "The main objective of the German operation 'Case Blue' during World War II was originally to capture what?",
+    "correct_answer": "Caucasus",
+    "incorrect_answers": [
+      "Stalingrad",
+      "Crimea",
+      "Voronezh"
+    ]
+  },
+  {
+    "id": 31,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "In 1961, an American B-52 aircraft crashed and nearly detonated two 4mt nuclear bombs over which US city?",
+    "correct_answer": "Goldsboro, North Carolina",
+    "incorrect_answers": [
+      "Hicksville, New York",
+      "Jacksonville, Florida",
+      "Conway, Arkansas"
+    ]
+  },
+  {
+    "id": 32,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What year did Skoal, a smokeless Tobacco company, release their first line of Pouches, known as 'Skoal Bandits'?",
+    "correct_answer": "1983",
+    "incorrect_answers": [
+      "1934",
+      "1984",
+      "1822"
+    ]
+  },
+  {
+    "id": 33,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which modern country is known as 'The Graveyard of Empires'?",
+    "correct_answer": "Afghanistan",
+    "incorrect_answers": [
+      "China",
+      "Iraq",
+      "Russia"
+    ]
+  },
+  {
+    "id": 34,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "When did construction of the Suez Canal finish?",
+    "correct_answer": "1869",
+    "incorrect_answers": [
+      "1859",
+      "1860",
+      "1850"
+    ]
+  },
+  {
+    "id": 35,
+    "category": "History",
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "The United States of America was the first country to launch a man into space.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "id": 36,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Who was the only US President to be elected four times?",
+    "correct_answer": "Franklin Roosevelt",
+    "incorrect_answers": [
+      "Theodore Roosevelt",
+      "George Washington",
+      "Abraham Lincoln"
+    ]
+  },
+  {
+    "id": 37,
+    "category": "History",
+    "type": "boolean",
+    "difficulty": "medium",
+    "question": "The Korean War ended in 1953 without any ceasefire.",
+    "correct_answer": "False",
+    "incorrect_answers": [
+      "True"
+    ]
+  },
+  {
+    "id": 38,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What happened on June 6, 1944?",
+    "correct_answer": "D-Day",
+    "incorrect_answers": [
+      "Atomic bombings of Hiroshima and Nagasaki",
+      "Attack on Pearl Harbor",
+      "The Liberation of Paris"
+    ]
+  },
+  {
+    "id": 39,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "When did the Crisis of the Third Century begin?",
+    "correct_answer": "235 AD",
+    "incorrect_answers": [
+      "235 BC",
+      "242 AD",
+      "210 AD"
+    ]
+  },
+  {
+    "id": 40,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the name of the two boats that Columbus sailed in during his voyage to the New World?",
+    "correct_answer": "Nina and Pinta",
+    "incorrect_answers": [
+      "Santa Maria and La Niña",
+      "Santa Clara and La Pinta",
+      "Santa Maria and La Santa"
+    ]
+  },
+  {
+    "id": 41,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "In Roman numerals, what number is represented as 'D'?",
+    "correct_answer": "500",
+    "incorrect_answers": [
+      "100",
+      "1000",
+      "50"
+    ]
+  },
+  {
+    "id": 42,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "What are Panama hats made out of?",
+    "correct_answer": "Straw",
+    "incorrect_answers": [
+      "Wool",
+      "Cotton",
+      "Linen"
+    ]
+  },
+  {
+    "id": 43,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which of the following countries were not an Axis power during World War II?",
+    "correct_answer": "Finland",
+    "incorrect_answers": [
+      "Hungary",
+      "Romania",
+      "Bulgaria"
+    ]
+  },
+  {
+    "id": 44,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which Empire was ruled by Emperor Justinian?",
+    "correct_answer": "Byzantine Empire",
+    "incorrect_answers": [
+      "Roman Empire",
+      "Ottoman Empire",
+      "Austrian Empire"
+    ]
+  },
+  {
+    "id": 45,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the first event that sparked World War I?",
+    "correct_answer": "Assassination of Archduke Franz Ferdinand of Austria",
+    "incorrect_answers": [
+      "Invasion of Poland",
+      "Treaty of Versailles",
+      "Russian Revolution"
+    ]
+  },
+  {
+    "id": 46,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "What was the first successful heavier-than-air powered aircraft?",
+    "correct_answer": "Wright Flyer",
+    "incorrect_answers": [
+      "Wright Glider",
+      "Curtiss Flyer",
+      "Blériot XI"
+    ]
+  },
+  {
+    "id": 47,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "medium",
+    "question": "Which country did the French Foreign Legion fight an 8-year war against from 1954?",
+    "correct_answer": "Algeria",
+    "incorrect_answers": [
+      "Morocco",
+      "Tunisia",
+      "Libya"
+    ]
+  },
+  {
+    "id": 48,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Which ship did Christopher Columbus command during his first voyage to America in 1492?",
+    "correct_answer": "Santa Maria",
+    "incorrect_answers": [
+      "Nina",
+      "Pinta",
+      "San Juan"
+    ]
+  },
+  {
+    "id": 49,
+    "category": "History",
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "What year was the United Nations founded?",
+    "correct_answer": "1945",
+    "incorrect_answers": [
+      "1950",
+      "1932",
+      "1942"
+    ]
+  }
+]
