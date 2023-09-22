@@ -40,7 +40,7 @@ h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
   
-  .container {
+  .container_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-size: 1.2rem;
@@ -51,13 +51,17 @@ small, .text_small {font-size: 0.8rem;}
     "card5 card6 card7 card8"
     "card9 card10 card11 card12";
 
-    gap: 1rem;
+    /* gap: 1rem; */
+    row-gap: 1rem;
     margin-top: 1rem;
     justify-content: center;
+    justify-items: center;
+    max-width: 80vw;
+    margin: 0 auto;
 
   }
 
-  .container > div {
+  .container_grid > div {
     box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.1 );
     border: 1px solid #023E8A;
     border-radius: 1rem;
@@ -65,13 +69,13 @@ small, .text_small {font-size: 0.8rem;}
     transition: visibility 0.4s ease-out;
   }
 
- .container > div:hover:not(.fade-out) {
+ .container_grid > div:hover:not(.fade-out) {
     animation-play-state: paused;
     animation: swelling 0.5s ease-in forwards infinite alternate;
   }
 
 
-  .container > div:active {
+  .container_grid > div:active {
     background-color: #03045E;
     transition: all 0.4s ease-in-out;
     color: #fff;
@@ -106,46 +110,46 @@ small, .text_small {font-size: 0.8rem;}
     color: #fff;
   }
   
-  /* .container > div:active {
+  /* .container_grid > div:active {
     background-color: rgba(34, 33, 33, 0);
     color: #000;
   } */
 
-  .container div:nth-child(1) {
+  .container_grid div:nth-child(1) {
     grid-area: card3;
   }
 
-  .container div:nth-child(2) {
+  .container_grid div:nth-child(2) {
     grid-area: card2;
   }
-  .container div:nth-child(3) {
+  .container_grid div:nth-child(3) {
     grid-area: card1;
   }
-  .container div:nth-child(4) {
+  .container_grid div:nth-child(4) {
     grid-area: card5;
   }
-  .container div:nth-child(5) {
+  .container_grid div:nth-child(5) {
     grid-area: card10;
   }
-  .container div:nth-child(6) {
+  .container_grid div:nth-child(6) {
     grid-area: card4;
   }
-  .container div:nth-child(7) {
+  .container_grid div:nth-child(7) {
     grid-area: card11;
   }
-  .container div:nth-child(8) {
+  .container_grid div:nth-child(8) {
     grid-area: card12;
   }
-  .container div:nth-child(9){
+  .container_grid div:nth-child(9){
     grid-area:card9;
   }
-  .container div:nth-child(10){
+  .container_grid div:nth-child(10){
     grid-area:card7;
   }
-  .container div:nth-child(11){
+  .container_grid div:nth-child(11){
     grid-area: card6;
   }
-  .container div:nth-child(12){
+  .container_grid div:nth-child(12){
     grid-area: card8;
   }
 
@@ -155,7 +159,8 @@ h1{
     font-weight: 300;
     letter-spacing: 0.3rem;
     text-align: center;
-    margin-block: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .pair-container {
@@ -163,7 +168,7 @@ h1{
     justify-content: center;
     align-items: center;
     height: 300px;
-    width: 300px;
+    width: 90%;
     padding: 2rem;
   }
   .popup-content {
@@ -204,9 +209,10 @@ h1{
     
   }
 
-  footer {
+  /* footer {
     height: 10%;
-  }
+  
+  } */
   
   
   
