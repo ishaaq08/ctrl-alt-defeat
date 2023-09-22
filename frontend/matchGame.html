@@ -23,7 +23,7 @@
     <script src="./template.js"></script>
     <div id="navbar-section"></div>
     <h1>Matching Card Game</h1>
-    <div class="container">
+    <div class="container_grid">
       <div class="pair-container pair1"></div>
 
       <div class="pair-container pair1"></div>
@@ -48,7 +48,8 @@
 
       <div class="pair-container pair6"></div>
     </div>
-    <div id="footer"></div>
+    
+    <div id="container_footer" class="container_footer"></div>
   </body>
 </html>
 <script
@@ -74,5 +75,9 @@
 <script>
   // Call the functions to load navbar and footer
   loadNavbar();
-  loadFooter();
+</script>
+<script>
+  $(function(){
+  $("#container_footer").load("footer.html");
+});
 </script>
