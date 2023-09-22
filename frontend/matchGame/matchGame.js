@@ -2,7 +2,6 @@ const cards = document.querySelectorAll('.pair-container');
 
 let selectedCards = [];
 let matchedCards = [];
-console.log(window.innerHeight, window.innerWidth)
 
 function openPopup() {
   const screenWidth = window.innerWidth;
@@ -41,7 +40,6 @@ cards.forEach((card) => {
 
       card.classList.add('clicked');
 
-      console.log(selectedCards)
 
       if (selectedCards.length === 2) {
         const [firstCard, secondCard] = selectedCards;
@@ -55,16 +53,14 @@ cards.forEach((card) => {
 
           selectedCards[0].classList.add('fade-out')
           selectedCards[1].classList.add('fade-out')
-     
+          
           setTimeout(() => {
-          selectedCards[0].style.visibility = 'hidden';
-          selectedCards[1].style.visibility = 'hidden';
+            selectedCards[0].style.visibility = 'hidden';
+            selectedCards[1].style.visibility = 'hidden';
+            
+            selectedCards = [];
+          }, 0)
 
-          selectedCards = [];
-          }, 500)
-
-          console.log('Correct pair chosen');
-          console.log(matchedCards)
 
           if (matchedCards.length === cards.length) {
             setTimeout(() =>  {
@@ -74,14 +70,14 @@ cards.forEach((card) => {
             selectedCards = [];
           }
         }else {   
-          console.log('Incorrect pair chosen');
+          
           selectedCards.forEach(card => {
             card.classList.remove('clicked');
           })
           selectedCards[0].classList.add('changeBackground');
           selectedCards[1].classList.add('changeBackground');
           setTimeout(() => {
-            console.log(selectedCards);
+            
             selectedCards[0].classList.remove('changeBackground');
             selectedCards[1].classList.remove('changeBackground');
             selectedCards = [];

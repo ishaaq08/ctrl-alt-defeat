@@ -23,7 +23,7 @@ let currentImageIndex = 0
 
 function displayNextQuote(){
 
-    console.log("entered function");
+    
     text.innerHTML = reviews[currentQuoteIndex]
     img.src = images[currentImageIndex]
 
@@ -38,7 +38,6 @@ function displayNextQuote(){
         currentImageIndex = 0
     }
 
-    console.log(images[currentImageIndex]);
 }
 
 displayNextQuote()

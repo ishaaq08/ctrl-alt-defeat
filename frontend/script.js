@@ -41,7 +41,7 @@ if(localStorage.getItem('score') != null){
 //click on the answers
 answer_buttons.forEach(item =>{
     item.addEventListener('click', e=>{
-        console.log("we are listening")
+        
         checkRight(e)
     })
 })
@@ -56,9 +56,9 @@ let clicked_answer = e.target.innerText
 let clicked_element = e.target
 if(!correct_element || correct_element==null){
     correct_element = "default answer"
-    console.log("correct element was not registered this time!")
+    
 }else{
-//console.log(correct_element)
+
 if (correct_element == clicked_answer){
     score++;
     localStorage.setItem('score', score)
@@ -79,7 +79,7 @@ if (correct_element == clicked_answer){
         // sometimes correct_element playing up on true or false questions
         if (correct_element && question && clicked_answer){
             addToWrongAnswers(question.innerText, correct_element, clicked_answer)
-            console.log(wrongAnswersCollected)
+            
         }else{
             console.log("we couldn't record a wrong answer this time")
         }
@@ -103,7 +103,7 @@ async function getRandomQuestion(){
     const response = await fetch("http://localhost:3000/quiz/random", options);
     const data = await response.json()
     displayQuestion(data)
-    console.log(data)
+    
 }
 function displayQuestion(data){
     // Assign a HTML element randomly to each answer
@@ -134,7 +134,7 @@ function displayQuestion(data){
         answers[indX[2]].textContent = wrongAnswersArray[1];
         answers[indX[3]].textContent = wrongAnswersArray[2];
         correct_element = answers[indX[0]].innerText
-        console.log(correct_element)
+        
     }
 }
 function fillTable(result){
@@ -159,7 +159,7 @@ function fillTable(result){
     }  
 }
 function exitGame(){
-    console.log("we reached the exitGame function")
+    
     questionsSection.style.display = 'none';
     exitButton.style.display = 'none';
     endDiv.textContent = "Thank you for playing!"
@@ -180,12 +180,12 @@ async function getNumberOfQuestion(){
     const response = await fetch("http://localhost:3000/quiz/random/all", options);
     const data = await response.json()
     reducedObject = data.slice(0,numberOfQuestion)
-    console.log(reducedObject)
+    
     for(let i=0; i<reducedObject.length; i++){
         displayQuestion(reducedObject[i]);
-        console.log("we are waiting for a click!")
+        
         await getClick();
-        console.log("click happened!")
+        
 
     }
     exitGame()
@@ -204,7 +204,7 @@ function getClick() {
 // saving all the questions the user did a mistake on
  function addToWrongAnswers(question, correctA, userInput){
     if (question in wrongAnswersCollected){
-        console.log("This Question appeared twice")
+        
     }else{
         wrongAnswersCollected.push([question, correctA, userInput])
     }
