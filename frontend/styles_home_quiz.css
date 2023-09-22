@@ -103,5 +103,35 @@ body {
     max-height: 7vh;
     position: relative;
     bottom: 0;
+}
+#table-result{
+    display: flex;
+    justify-content: center;
+    
+}
+table{
+    border: solid 3px #41607b;
+    margin-left: 20vw;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+table thead tr{
+    background-color: #596d94;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+}
+table th td{
+    padding: 12px 15px;
+    font-size: 2em;
+}
+table tbody tr:nth-of-type(even) {
+    background-color: #b2c4da;
+}
 
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #2432ad;
+}
+table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
 }
