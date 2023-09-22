@@ -54,6 +54,10 @@ exitButton.addEventListener('click', exitGame)
 function checkRight(e){
 let clicked_answer = e.target.innerText
 let clicked_element = e.target
+if(!correct_element || correct_element==null){
+    correct_element = "default answer"
+    console.log("correct element was not registered this time!")
+}else{
 //console.log(correct_element)
 if (correct_element == clicked_answer){
     score++;
@@ -80,6 +84,7 @@ if (correct_element == clicked_answer){
             console.log("we couldn't record a wrong answer this time")
         }
         }
+    }
 }
 //random index functions to shuffle answers later
 function getIndexForAnswers(){
@@ -131,6 +136,27 @@ function displayQuestion(data){
         console.log(correct_element)
     }
 }
+function fillTable(result){
+    // [[1,2,3], [1,2,3]]
+    let table = document.querySelector("#table-results")
+
+    // create header 
+    let thead = table.createTHead();
+    let headerRow = thead.insertRow();
+    addCell(headerRow, 'Question');
+    addCell(headerRow, 'Correct Answer');
+    addCell(headerRow, 'Answered');
+   
+    //add to the last row   
+    //this will need a for loop throught the array
+    for (let i= 0; i< result.length; i++){
+        let row = table.insertRow(-1);
+        for (let j = 0; j<result[i].length; j++){
+        let c1 =row.insertCell()
+        c1.innerText =result[i][j];
+        }
+    }  
+}
 function exitGame(){
     console.log("we reached the exitGame function")
     questionsSection.style.display = 'none';
@@ -138,6 +164,7 @@ function exitGame(){
     endDiv.textContent = "Thank you for playing!"
     endDiv.style.fontSize = "large";
     scoreField1.textContent = "Correct Answers: "
+    fillTable(wrongAnswersCollected)
     score_reset = 0
     localStorage.setItem('score', score_reset) 
 }
@@ -183,4 +210,10 @@ function getClick() {
     }else{
         wrongAnswersCollected.push([question, correctA, userInput])
     }
+ }
+
+ function addCell(tr,text){
+    let td = tr.insertCell();
+    td.textContent = text;
+    return td;
  }
