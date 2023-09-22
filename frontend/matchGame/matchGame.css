@@ -65,13 +65,11 @@ small, .text_small {font-size: 0.8rem;}
     transition: visibility 0.4s ease-out;
   }
 
-  .container > div:hover {
-    /* background-color: #023E8A;
-    color: #fff; */
-    
+ .container > div:hover:not(.fade-out) {
     animation-play-state: paused;
     animation: swelling 0.5s ease-in forwards infinite alternate;
   }
+
 
   .container > div:active {
     background-color: #03045E;
@@ -79,9 +77,19 @@ small, .text_small {font-size: 0.8rem;}
     color: #fff;
   }
 
+  .fade-out {
+    animation: shrinking 0.3s ease-out forwards;
+  }
+
 .clicked {
   background-color: #03045E;
   color: #fff;
+}
+
+@keyframes shrinking{
+  100% {
+    transform: scale(0)
+  }
 }
 
 

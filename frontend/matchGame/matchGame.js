@@ -52,11 +52,16 @@ cards.forEach((card) => {
           matchedCards.push(firstCard, secondCard);
           selectedCards[0].style.backgroundColor = 'green';
           selectedCards[1].style.backgroundColor = 'green';
+
+          selectedCards[0].classList.add('fade-out')
+          selectedCards[1].classList.add('fade-out')
+     
+          setTimeout(() => {
           selectedCards[0].style.visibility = 'hidden';
           selectedCards[1].style.visibility = 'hidden';
-    
-          
+
           selectedCards = [];
+          }, 500)
 
           console.log('Correct pair chosen');
           console.log(matchedCards)
