@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="matchGame.css" />
+    <title>Congratulations</title>
+  </head>
+  <body>
+    <div class="popup-content">
+      <h1>Congratulations!</h1>
+      <p>You've completed the game.</p>
+
+      <div class="btns">
+        <button id="indexButton">Go to homepage</button>
+        <button id="selectGameButton">Select a new game</button>
+        <button id="reloadButton">Try again</button>
+      </div>
+    </div>
+
+    <script>
+      // Function to navigate to index.html
+      function goToIndexPage() {
+        window.close();
+        window.opener.location.href = 'index.html';
+      }
+
+      // Function to navigate to selectGame.html
+      function goToSelectGamePage() {
+        window.close();
+        window.opener.location.href = 'selectGame.html';
+      }
+
+      // Function to reload the current page
+      function reloadCurrentPage() {
+        window.close();
+        window.opener.location.href = '../matchGame.html';
+      }
+
+      // Add click event listeners to the buttons
+      document
+        .getElementById('indexButton')
+        .addEventListener('click', goToIndexPage);
+      document
+        .getElementById('selectGameButton')
+        .addEventListener('click', goToSelectGamePage);
+      document
+        .getElementById('reloadButton')
+        .addEventListener('click', reloadCurrentPage);
+    </script>
+  </body>
+</html>

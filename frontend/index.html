@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles_home_quiz.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Home</title>
+    <script src="jquery-3.6.4.min.js"></script>
+</head>
+<body class="bg-image">
+    <!-- navbar -->
+    <section id="navbar-section">
+    </section>
+    <!-- main sections -->
+
+    <div class="jumbotron text-center my-2">
+      <h1>Welcome to CTRL-ALT-DEFEAT</h1>
+  </div>
+    <section id="intro-homepage ">
+        <div class="container-fluid h-50 my-4">
+            <div class="row introBox align-items-center justify-content-center">
+                <div class="col-lg-6 m-4 text-center">
+                    <p class="intro-text">At CTRL-ALT-DEFEAT, education becomes an adventure. Explore subjects, play games, and embark on a journey of discovery like never before. Get ready to learn, play, and thrive with us!</p>
+                </div>
+                
+            </div>
+          </div>
+    </section>
+    <!-- Subject Choice -->
+    <section id="subject_choice">
+        <!-- <div class="container-fluid">
+            <div class="row h-75 justify-content-center">
+                <div class="col-3 text-center eachsubject">
+                    <div class="content">
+                      <button type="button" class="new-quiz-button"><p>Literature</p></button>
+                    </div>
+                </div>
+                <div class="col-3  text-center eachsubject">
+                    <div class="content">
+                      <button type="button" class="new-quiz-button"><p>Art</p></button>
+                    </div> 
+                </div>
+                <div class="col-3 text-center eachsubject">
+                    <div class="content">
+                      <a href="selectGame.html"><button id="historyButton"  class="new-quiz-button"><p>History</p></button></a>
+                    </div>    
+                </div>
+            </div>
+        </div> -->
+
+        <div class="row justify-content-center align-items-center">
+
+          <div class="col-md-3 text-center my-auto parent-container ">
+            <button type="button" class="new-quiz-button subject"><h3 class="btn-header">Literature</h3></p></button>
+          </div>
+
+          <div class="col-md-3 text-center my-auto parent-container">
+            <button type="button" class="new-quiz-button subject"><h3 class="btn-header">Art</h3></p></button>
+          </div>
+
+          <div class="col-md-3 text-center my-auto parent-container">
+            <a href="selectGame.html"><button id="historyButton"  class="new-quiz-button subject"><h3 class="btn-header">History</h3></button></a>
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+    <!-- footer -->
+    <div id="container_footer" class="container_footer">
+      </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+<script>
+  $(function(){
+  $("#navbar-section").load("nav.html");
+});
+</script>
+<script>
+  $(function(){
+  $("#container_footer").load("footer.html");
+});
+</script>
+</body>
+</html>
