@@ -189,7 +189,6 @@ async function getNumberOfQuestion(){
     }
     exitGame()
 }
-getNumberOfQuestion()
 
 /// ACCESSORY FUNCTIONS ////////
 // a function that returns a promise and waits for a click 
@@ -197,8 +196,7 @@ function getClick() {
     return new Promise(acc => {
         function handleClick() {
             setTimeout(() =>{answers_cont.removeEventListener('click', handleClick);
-            acc();}, 1000)
-            
+            acc();}, 1000)           
         }
             answers_cont.addEventListener('click', handleClick);
       });
@@ -217,3 +215,4 @@ function getClick() {
     td.textContent = text;
     return td;
  }
+ getNumberOfQuestion()

@@ -114,6 +114,11 @@ table{
     margin-left: 20vw;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
+table thead td{
+    font-size: larger;
+    color: white;
+    
+}
 table thead tr{
     background-color: #596d94;
     color: white;
@@ -122,7 +127,6 @@ table thead tr{
 }
 table th td{
     padding: 12px 15px;
-    font-size: 2em;
 }
 table tbody tr:nth-of-type(even) {
     background-color: #b2c4da;
@@ -132,6 +136,6 @@ table tbody tr:last-of-type {
     border-bottom: 2px solid #2432ad;
 }
 table tbody tr.active-row {
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #009879;
 }
