@@ -119,6 +119,7 @@ function displayQuestion(data){
         const answers = [answer2, answer3];
         answers[twoindX[0]].textContent = correctAnswer;
         answers[twoindX[1]].textContent = wrongAnswersArray[0];
+        correct_element = answers[twoindX[0]].innerText;
         //set none used elements to hidden
         answer1.style.display ='none';
         answer4.style.display ='none';
